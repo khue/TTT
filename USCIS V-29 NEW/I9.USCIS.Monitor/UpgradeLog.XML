@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="I9.USCIS.Monitor">
+</Property><Property Name="Solution File" Value="C:\Dev\USCIS V-21\I9.USCIS.Monitor\I9.USCIS.Monitor.sln">
+</Property><Property Name="User Options File" Value="C:\Dev\USCIS V-21\I9.USCIS.Monitor\I9.USCIS.Monitor.suo">
+</Property><Property Name="Date" Value="Monday, October 18, 2010">
+</Property><Property Name="Time" Value="10:55 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="I9.USCIS.Monitor.sln" Description="File successfully backed up as C:\Dev\USCIS V-21\I9.USCIS.Monitor\Backup\I9.USCIS.Monitor.sln">
+</Event><Event ErrorLevel="0" Project="" Source="I9.USCIS.Monitor.suo" Description="File successfully backed up as C:\Dev\USCIS V-21\I9.USCIS.Monitor\Backup\I9.USCIS.Monitor.suo">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Monitor" Source="I9.USCIS.Monitor.csproj" Description="Project file successfully backed up as C:\Dev\USCIS V-21\I9.USCIS.Monitor\Backup\I9.USCIS.Monitor.csproj">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Monitor" Source="I9.USCIS.Monitor.csproj.user" Description="Project user file successfully backed up as C:\Dev\USCIS V-21\I9.USCIS.Monitor\Backup\I9.USCIS.Monitor.csproj.user">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Monitor" Source="MyConfiguration.cs" Description="File successfully backed up as C:\Dev\USCIS V-21\I9.USCIS.Monitor\Backup\MyConfiguration.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Monitor" Source="MyException.cs" Description="File successfully backed up as C:\Dev\USCIS V-21\I9.USCIS.Monitor\Backup\MyException.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Monitor" Source="MyService.cs" Description="File successfully backed up as C:\Dev\USCIS V-21\I9.USCIS.Monitor\Backup\MyService.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Monitor" Source="MyService.Designer.cs" Description="File successfully backed up as C:\Dev\USCIS V-21\I9.USCIS.Monitor\Backup\MyService.Designer.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Monitor" Source="Program.cs" Description="File successfully backed up as C:\Dev\USCIS V-21\I9.USCIS.Monitor\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Monitor" Source="ProjectInstaller.cs" Description="File successfully backed up as C:\Dev\USCIS V-21\I9.USCIS.Monitor\Backup\ProjectInstaller.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Monitor" Source="ProjectInstaller.Designer.cs" Description="File successfully backed up as C:\Dev\USCIS V-21\I9.USCIS.Monitor\Backup\ProjectInstaller.Designer.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Monitor" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Dev\USCIS V-21\I9.USCIS.Monitor\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Monitor" Source="Sql\spUSCISBE_Monitor_Get.cs" Description="File successfully backed up as C:\Dev\USCIS V-21\I9.USCIS.Monitor\Backup\Sql\spUSCISBE_Monitor_Get.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Monitor" Source="app.config" Description="File successfully backed up as C:\Dev\USCIS V-21\I9.USCIS.Monitor\Backup\app.config">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Monitor" Source="app.ico" Description="File successfully backed up as C:\Dev\USCIS V-21\I9.USCIS.Monitor\Backup\app.ico">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Monitor" Source="MyService.resx" Description="File successfully backed up as C:\Dev\USCIS V-21\I9.USCIS.Monitor\Backup\MyService.resx">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Monitor" Source="ProjectInstaller.resx" Description="File successfully backed up as C:\Dev\USCIS V-21\I9.USCIS.Monitor\Backup\ProjectInstaller.resx">
+</Event><Event ErrorLevel="1" Project="I9.USCIS.Monitor" Source="I9.USCIS.Monitor.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Monitor" Source="I9.USCIS.Monitor.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="I9.USCIS.Monitor" Source="I9.USCIS.Monitor.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="I9.USCIS.Monitor.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="I9.USCIS.Monitor.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Monitor" Source="I9.USCIS.Monitor.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

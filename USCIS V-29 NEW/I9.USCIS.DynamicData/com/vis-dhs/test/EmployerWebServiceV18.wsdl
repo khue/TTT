@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="https://www.vis-dhs.com/EmployerWebService/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" targetNamespace="https://www.vis-dhs.com/EmployerWebService/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="https://www.vis-dhs.com/EmployerWebService/">
+      <s:element name="EmpInitBPVerif">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSftwrVer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MiddleInitial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MaidenName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SSNNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="BirthDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="HireDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="CitizenshipStatus" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="AlienNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="I94Number" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CardNbr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassPortNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VisaNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="DocumentID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="DocExpDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="SubmittingOfficial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SubmittersPhoneNbr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserField" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmpInitBPVerifResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmpInitBPVerifResult" type="tns:EmpInitVerfResp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EmpInitVerfResp">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CaseNbr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EligStatementCd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EligStatementTxt" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EligStatementDetailsTxt" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PotentialNaturalizedInd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AdditionalPerfind" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhotoIncluded" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Photo" type="s:base64Binary" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnStatusMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EmpInitDABPVerif">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ClientCompanyId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSftwrVer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MiddleInitial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MaidenName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SSNNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="BirthDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="HireDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="CitizenshipStatus" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="AlienNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="I94Number" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CardNbr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PassPortNumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="VisaNumber" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="DocumentID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="DocExpDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="SubmittingOfficial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SubmittersPhoneNbr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserField" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmpInitDABPVerifResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmpInitDABPVerifResult" type="tns:EmpInitVerfResp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmpSubmitAdditVerif">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSftwrVer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CaseNbr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SubmittingOfficial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SubmittersPhoneNbr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Comment" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmpSubmitAdditVerifResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmpSubmitAdditVerifResult" type="tns:EmpSubmitAdditVerifResp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EmpSubmitAdditVerifResp">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnStatusMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EmpGetNextResolvedCaseNbrs">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSftwrVer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SearchType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AcknowledgeFlg" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmpGetNextResolvedCaseNbrsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmpGetNextResolvedCaseNbrsResult" type="tns:EmpGetNextResolvedCaseNbrsResp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EmpGetNextResolvedCaseNbrsResp">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NumberOfCases" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CaseArray" type="tns:ArrayOfCaseListArray" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnStatusMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCaseListArray">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CaseListArray" type="tns:CaseListArray" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CaseListArray">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CaseNbr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TypeOfCase" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UserField" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResponseCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ResponseStmt" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ResolveDate" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EmpAckReceiptOfResolvedCaseNbr">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSftwrVer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CaseNbr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TypeOfCase" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmpAckReceiptOfResolvedCaseNbrResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmpAckReceiptOfResolvedCaseNbrResult" type="tns:EmpAckReceiptOfResolvedCaseNbrResp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EmpAckReceiptOfResolvedCaseNbrResp">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnStatusMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EmpCloseCase">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSftwrVer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CaseNbr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CloseStatus" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmpCloseCaseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmpCloseCaseResult" type="tns:EmpCloseCaseResp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EmpCloseCaseResp">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="UserField" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnStatusMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EmpSubSSAReferral">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSftwrVer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CaseNbr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmpSubSSAReferralResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmpSubSSAReferralResult" type="tns:EmpSubmitSSAReferralResp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EmpSubmitSSAReferralResp">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnStatusMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EmpCpsVerifyConnection">
+        <s:complexType />
+      </s:element>
+      <s:element name="EmpCpsVerifyConnectionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmpCpsVerifyConnectionResult" type="tns:EmpCpsVerifyConnectionResp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EmpCpsVerifyConnectionResp">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnStatusMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EmpSubDHSReferral">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSftwrVer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CaseNbr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmpSubDHSReferralResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmpSubDHSReferralResult" type="tns:EmpSubmitDHSReferralResp7" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EmpSubmitDHSReferralResp7">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ContactDHSByDt" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnStatusMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetUserPassword">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="NewPassword" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetUserPasswordResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetUserPasswordResult" type="tns:SetUserPasswordResp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SetUserPasswordResp">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnStatusMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EmpSSAResubmittal">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ClientSftwrVer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CaseNbr" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MiddleNameInitial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MaidenName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SocialSecurityNbr" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="BirthDate" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmpSSAResubmittalResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmpSSAResubmittalResult" type="tns:EmpSSAResubmittalResp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EmpSSAResubmittalResp">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="LastName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FirstName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EligStatementCd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EligStatementTxt" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AdditionalPerfind" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnStatusMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EmpGetCaseDetails">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CaseNbr" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmpGetCaseDetailsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmpGetCaseDetailsResult" type="tns:EmpGtCseDetailsResp7" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EmpGtCseDetailsResp7">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CaseNbr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CurrentState" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitiCitizenshipDescr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitiAlienNum" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitiI94Num" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitiLogonId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="InitiDt" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitiLastNm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitiFirstNm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitiMiddleInitial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitiMaidenNm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitiSsn" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="InitiBirthDt" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="InitiHireDt" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitiDocType" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="InitiDocExpireDt" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitiUserField" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitoLastNm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitoFirstNm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitoMessageCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitoEligibStmt" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InitoEligibStmtDetails" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PotentialNaturalizedInd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddiiComments" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddiiLogonId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AddiiDt" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddiiTransCd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddioEligibStmt" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AddioResolutionCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="AddioResolvedDt" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClosureCdDescr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClosedBy" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="ClosedDt" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsReferiDt" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="InsReferiBy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InsReferoEligibStmt" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="InsReferoResolutionCode" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsReferoResolvedDt" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="InsReferoContactDHSByDt" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="SsaReferiDt" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="SsaReferiBy" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SsaResubmiLastNm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SsaResubmiFirstNm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SsaResubmiMiddleInitial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SsaResubmiMaidenNm" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SsaResubmiSsn" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SsaResubmiBirthDt" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="SsaResubmiLogonId" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SsaResubmiDt" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="SsaResubmoMessageCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SsaResubmoEligibStmt" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SsaReferralRespDueDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ClientCompanyName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhotoIncluded" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Photo" type="s:base64Binary" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnStatusMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EmpGetCitizenshipStatusCodes">
+        <s:complexType />
+      </s:element>
+      <s:element name="EmpGetCitizenshipStatusCodesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmpGetCitizenshipStatusCodesResult" type="tns:EmpGetCitizenshipCodesResp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EmpGetCitizenshipCodesResp">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NumberOfCitizenshipCodes" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CitizenshipCodeArray" type="tns:ArrayOfCitizenshipCodeListArray" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnStatusMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfCitizenshipCodeListArray">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="CitizenshipCodeListArray" type="tns:CitizenshipCodeListArray" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="CitizenshipCodeListArray">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="CitizenshipCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CitizenshipDescr" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CitizenshipName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EmpGetAvailableDocumentTypes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CitizenshipCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmpGetAvailableDocumentTypesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmpGetAvailableDocumentTypesResult" type="tns:EmpGetAvailableDocumentTypesResp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EmpGetAvailableDocumentTypesResp">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NumberOfDocTypes" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocTypeArray" type="tns:ArrayOfDocTypeListArray" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnStatusMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfDocTypeListArray">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="DocTypeListArray" type="tns:DocTypeListArray" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="DocTypeListArray">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CitizenshipCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CitizenshipName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EmpGetAllDataFields">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CitizenshipCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DocId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmpGetAllDataFieldsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EmpGetAllDataFieldsResult" type="tns:EmpGetAllDataFieldsResp" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EmpGetAllDataFieldsResp">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="NumberOfFieldRecords" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="FieldArray" type="tns:ArrayOfFieldListArray" />
+          <s:element minOccurs="1" maxOccurs="1" name="ReturnStatus" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnStatusMsg" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfFieldListArray">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="FieldListArray" type="tns:FieldListArray" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="FieldListArray">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="DataElementName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RequiredInd" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentId" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DocumentType" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CitizenshipCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CitizenshipName" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="EmpInitBPVerifSoapIn">
+    <wsdl:part name="parameters" element="tns:EmpInitBPVerif" />
+  </wsdl:message>
+  <wsdl:message name="EmpInitBPVerifSoapOut">
+    <wsdl:part name="parameters" element="tns:EmpInitBPVerifResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmpInitDABPVerifSoapIn">
+    <wsdl:part name="parameters" element="tns:EmpInitDABPVerif" />
+  </wsdl:message>
+  <wsdl:message name="EmpInitDABPVerifSoapOut">
+    <wsdl:part name="parameters" element="tns:EmpInitDABPVerifResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmpSubmitAdditVerifSoapIn">
+    <wsdl:part name="parameters" element="tns:EmpSubmitAdditVerif" />
+  </wsdl:message>
+  <wsdl:message name="EmpSubmitAdditVerifSoapOut">
+    <wsdl:part name="parameters" element="tns:EmpSubmitAdditVerifResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmpGetNextResolvedCaseNbrsSoapIn">
+    <wsdl:part name="parameters" element="tns:EmpGetNextResolvedCaseNbrs" />
+  </wsdl:message>
+  <wsdl:message name="EmpGetNextResolvedCaseNbrsSoapOut">
+    <wsdl:part name="parameters" element="tns:EmpGetNextResolvedCaseNbrsResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmpAckReceiptOfResolvedCaseNbrSoapIn">
+    <wsdl:part name="parameters" element="tns:EmpAckReceiptOfResolvedCaseNbr" />
+  </wsdl:message>
+  <wsdl:message name="EmpAckReceiptOfResolvedCaseNbrSoapOut">
+    <wsdl:part name="parameters" element="tns:EmpAckReceiptOfResolvedCaseNbrResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmpCloseCaseSoapIn">
+    <wsdl:part name="parameters" element="tns:EmpCloseCase" />
+  </wsdl:message>
+  <wsdl:message name="EmpCloseCaseSoapOut">
+    <wsdl:part name="parameters" element="tns:EmpCloseCaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmpSubSSAReferralSoapIn">
+    <wsdl:part name="parameters" element="tns:EmpSubSSAReferral" />
+  </wsdl:message>
+  <wsdl:message name="EmpSubSSAReferralSoapOut">
+    <wsdl:part name="parameters" element="tns:EmpSubSSAReferralResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmpCpsVerifyConnectionSoapIn">
+    <wsdl:part name="parameters" element="tns:EmpCpsVerifyConnection" />
+  </wsdl:message>
+  <wsdl:message name="EmpCpsVerifyConnectionSoapOut">
+    <wsdl:part name="parameters" element="tns:EmpCpsVerifyConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmpSubDHSReferralSoapIn">
+    <wsdl:part name="parameters" element="tns:EmpSubDHSReferral" />
+  </wsdl:message>
+  <wsdl:message name="EmpSubDHSReferralSoapOut">
+    <wsdl:part name="parameters" element="tns:EmpSubDHSReferralResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetUserPasswordSoapIn">
+    <wsdl:part name="parameters" element="tns:SetUserPassword" />
+  </wsdl:message>
+  <wsdl:message name="SetUserPasswordSoapOut">
+    <wsdl:part name="parameters" element="tns:SetUserPasswordResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmpSSAResubmittalSoapIn">
+    <wsdl:part name="parameters" element="tns:EmpSSAResubmittal" />
+  </wsdl:message>
+  <wsdl:message name="EmpSSAResubmittalSoapOut">
+    <wsdl:part name="parameters" element="tns:EmpSSAResubmittalResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmpGetCaseDetailsSoapIn">
+    <wsdl:part name="parameters" element="tns:EmpGetCaseDetails" />
+  </wsdl:message>
+  <wsdl:message name="EmpGetCaseDetailsSoapOut">
+    <wsdl:part name="parameters" element="tns:EmpGetCaseDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmpGetCitizenshipStatusCodesSoapIn">
+    <wsdl:part name="parameters" element="tns:EmpGetCitizenshipStatusCodes" />
+  </wsdl:message>
+  <wsdl:message name="EmpGetCitizenshipStatusCodesSoapOut">
+    <wsdl:part name="parameters" element="tns:EmpGetCitizenshipStatusCodesResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmpGetAvailableDocumentTypesSoapIn">
+    <wsdl:part name="parameters" element="tns:EmpGetAvailableDocumentTypes" />
+  </wsdl:message>
+  <wsdl:message name="EmpGetAvailableDocumentTypesSoapOut">
+    <wsdl:part name="parameters" element="tns:EmpGetAvailableDocumentTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmpGetAllDataFieldsSoapIn">
+    <wsdl:part name="parameters" element="tns:EmpGetAllDataFields" />
+  </wsdl:message>
+  <wsdl:message name="EmpGetAllDataFieldsSoapOut">
+    <wsdl:part name="parameters" element="tns:EmpGetAllDataFieldsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="EmployerWebServiceV18Soap">
+    <wsdl:operation name="EmpInitBPVerif">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is the (BP)employer combined initial/additional (primary/secondary) transaction.</wsdl:documentation>
+      <wsdl:input message="tns:EmpInitBPVerifSoapIn" />
+      <wsdl:output message="tns:EmpInitBPVerifSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmpInitDABPVerif">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is the (DABP)employer combined initial/additional (primary/secondary) transaction.</wsdl:documentation>
+      <wsdl:input message="tns:EmpInitDABPVerifSoapIn" />
+      <wsdl:output message="tns:EmpInitDABPVerifSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmpSubmitAdditVerif">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is used submit additional(secondary) data to the DHS FCO</wsdl:documentation>
+      <wsdl:input message="tns:EmpSubmitAdditVerifSoapIn" />
+      <wsdl:output message="tns:EmpSubmitAdditVerifSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmpGetNextResolvedCaseNbrs">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is used to retrieve the next First, Second, or Third case number for a case that has pending DHS additional information ready.</wsdl:documentation>
+      <wsdl:input message="tns:EmpGetNextResolvedCaseNbrsSoapIn" />
+      <wsdl:output message="tns:EmpGetNextResolvedCaseNbrsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmpAckReceiptOfResolvedCaseNbr">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is used to signal that a client has successfully received secondary information for a case.</wsdl:documentation>
+      <wsdl:input message="tns:EmpAckReceiptOfResolvedCaseNbrSoapIn" />
+      <wsdl:output message="tns:EmpAckReceiptOfResolvedCaseNbrSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmpCloseCase">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is used to close a case.</wsdl:documentation>
+      <wsdl:input message="tns:EmpCloseCaseSoapIn" />
+      <wsdl:output message="tns:EmpCloseCaseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmpSubSSAReferral">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is used to notify CPS that an employee was referred to the Social Security Administration to resolve an SSN issue</wsdl:documentation>
+      <wsdl:input message="tns:EmpSubSSAReferralSoapIn" />
+      <wsdl:output message="tns:EmpSubSSAReferralSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmpCpsVerifyConnection">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is used to verify a userid/password and connection to cps.</wsdl:documentation>
+      <wsdl:input message="tns:EmpCpsVerifyConnectionSoapIn" />
+      <wsdl:output message="tns:EmpCpsVerifyConnectionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmpSubDHSReferral">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This Web Service method is used to notify DHS than an employee plans to manually contest an Initial Verification response.</wsdl:documentation>
+      <wsdl:input message="tns:EmpSubDHSReferralSoapIn" />
+      <wsdl:output message="tns:EmpSubDHSReferralSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetUserPassword">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is used to reset a users password.</wsdl:documentation>
+      <wsdl:input message="tns:SetUserPasswordSoapIn" />
+      <wsdl:output message="tns:SetUserPasswordSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmpSSAResubmittal">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is used to resubmit an employment verification request that previously returned SSA TENTATIVE NONCONFIRMATION</wsdl:documentation>
+      <wsdl:input message="tns:EmpSSAResubmittalSoapIn" />
+      <wsdl:output message="tns:EmpSSAResubmittalSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmpGetCaseDetails">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method is used to retrieve detail information on a case.</wsdl:documentation>
+      <wsdl:input message="tns:EmpGetCaseDetailsSoapIn" />
+      <wsdl:output message="tns:EmpGetCaseDetailsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmpGetCitizenshipStatusCodes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method returns all of the valid citizenship codes and descriptions</wsdl:documentation>
+      <wsdl:input message="tns:EmpGetCitizenshipStatusCodesSoapIn" />
+      <wsdl:output message="tns:EmpGetCitizenshipStatusCodesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmpGetAvailableDocumentTypes">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method returns all of the valid citizenship codes and descriptions</wsdl:documentation>
+      <wsdl:input message="tns:EmpGetAvailableDocumentTypesSoapIn" />
+      <wsdl:output message="tns:EmpGetAvailableDocumentTypesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmpGetAllDataFields">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">This method returns all of the valid citizenship codes and descriptions</wsdl:documentation>
+      <wsdl:input message="tns:EmpGetAllDataFieldsSoapIn" />
+      <wsdl:output message="tns:EmpGetAllDataFieldsSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="EmployerWebServiceV18Soap" type="tns:EmployerWebServiceV18Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="EmpInitBPVerif">
+      <soap:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpInitBPVerif" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpInitDABPVerif">
+      <soap:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpInitDABPVerif" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpSubmitAdditVerif">
+      <soap:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpSubmitAdditVerif" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpGetNextResolvedCaseNbrs">
+      <soap:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpGetNextResolvedCaseNbrs" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpAckReceiptOfResolvedCaseNbr">
+      <soap:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpAckReceiptOfResolvedCaseNbr" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpCloseCase">
+      <soap:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpCloseCase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpSubSSAReferral">
+      <soap:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpSubSSAReferral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpCpsVerifyConnection">
+      <soap:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpCpsVerifyConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpSubDHSReferral">
+      <soap:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpSubDHSReferral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserPassword">
+      <soap:operation soapAction="https://www.vis-dhs.com/EmployerWebService/SetUserPassword" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpSSAResubmittal">
+      <soap:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpSSAResubmittal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpGetCaseDetails">
+      <soap:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpGetCaseDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpGetCitizenshipStatusCodes">
+      <soap:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpGetCitizenshipStatusCodes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpGetAvailableDocumentTypes">
+      <soap:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpGetAvailableDocumentTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpGetAllDataFields">
+      <soap:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpGetAllDataFields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="EmployerWebServiceV18Soap12" type="tns:EmployerWebServiceV18Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+    <wsdl:operation name="EmpInitBPVerif">
+      <soap12:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpInitBPVerif" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpInitDABPVerif">
+      <soap12:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpInitDABPVerif" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpSubmitAdditVerif">
+      <soap12:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpSubmitAdditVerif" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpGetNextResolvedCaseNbrs">
+      <soap12:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpGetNextResolvedCaseNbrs" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpAckReceiptOfResolvedCaseNbr">
+      <soap12:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpAckReceiptOfResolvedCaseNbr" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpCloseCase">
+      <soap12:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpCloseCase" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpSubSSAReferral">
+      <soap12:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpSubSSAReferral" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpCpsVerifyConnection">
+      <soap12:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpCpsVerifyConnection" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpSubDHSReferral">
+      <soap12:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpSubDHSReferral" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetUserPassword">
+      <soap12:operation soapAction="https://www.vis-dhs.com/EmployerWebService/SetUserPassword" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpSSAResubmittal">
+      <soap12:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpSSAResubmittal" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpGetCaseDetails">
+      <soap12:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpGetCaseDetails" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpGetCitizenshipStatusCodes">
+      <soap12:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpGetCitizenshipStatusCodes" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpGetAvailableDocumentTypes">
+      <soap12:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpGetAvailableDocumentTypes" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmpGetAllDataFields">
+      <soap12:operation soapAction="https://www.vis-dhs.com/EmployerWebService/EmpGetAllDataFields" style="document" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      <wsdl:input>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EmployerWebServiceV18">
+    <wsdl:port name="EmployerWebServiceV18Soap" binding="tns:EmployerWebServiceV18Soap">
+      <soap:address location="https://test.vis-dhs.com/WebService/EmployerWebServiceV18.asmx" />
+    </wsdl:port>
+    <wsdl:port name="EmployerWebServiceV18Soap12" binding="tns:EmployerWebServiceV18Soap12">
+      <soap12:address location="https://test.vis-dhs.com/WebService/EmployerWebServiceV18.asmx" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

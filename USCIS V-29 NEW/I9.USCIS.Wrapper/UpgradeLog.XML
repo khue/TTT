@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="I9.USCIS.Wrapper">
+</Property><Property Name="Solution File" Value="C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\I9.USCIS.Wrapper.sln">
+</Property><Property Name="User Options File" Value="C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\I9.USCIS.Wrapper.suo">
+</Property><Property Name="Date" Value="Tuesday, July 20, 2010">
+</Property><Property Name="Time" Value="16:48 PM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="I9.USCIS.Wrapper.sln" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\I9.USCIS.Wrapper.sln">
+</Event><Event ErrorLevel="0" Project="" Source="I9.USCIS.Wrapper.suo" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\I9.USCIS.Wrapper.suo">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="I9.USCIS.Wrapper.csproj" Description="Project file successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\I9.USCIS.Wrapper.csproj">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="com\vis-dhs\ICaseListArray.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\com\vis-dhs\ICaseListArray.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="com\vis-dhs\ICitizenshipCodeListArray.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\com\vis-dhs\ICitizenshipCodeListArray.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="com\vis-dhs\IDocTypeListArray.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\com\vis-dhs\IDocTypeListArray.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="com\vis-dhs\IFieldListArray.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\com\vis-dhs\IFieldListArray.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="com\vis-dhs\test\Reference.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\com\vis-dhs\test\Reference.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="com\vis-dhs\www\Reference.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\com\vis-dhs\www\Reference.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Employee\IRemoteCase.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Employee\IRemoteCase.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Sql\spUSCIS_OnDemandEmail_Insert.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Sql\spUSCIS_OnDemandEmail_Insert.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Sql\spUSCIS_Request_UpdateFromXQueue.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Sql\spUSCIS_Request_UpdateFromXQueue.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Sql\spUSCIS_QueueFuture_Insert.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Sql\spUSCIS_QueueFuture_Insert.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Sql\spUSCIS_ConsoleLink_Insert.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Sql\spUSCIS_ConsoleLink_Insert.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Sql\spUSCIS_Closure_Get.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Sql\spUSCIS_Closure_Get.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Sql\spUSCIS_EmployeeI9_GetDetails.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Sql\spUSCIS_EmployeeI9_GetDetails.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Sql\spUSCIS_EmployeeI9_GetIdentities.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Sql\spUSCIS_EmployeeI9_GetIdentities.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Sql\spUSCIS_Log_Insert.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Sql\spUSCIS_Log_Insert.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Sql\spUSCIS_QueueError_Insert.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Sql\spUSCIS_QueueError_Insert.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Sql\spUSCIS_Request_Insert.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Sql\spUSCIS_Request_Insert.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Sql\spUSCIS_Response_Insert.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Sql\spUSCIS_Response_Insert.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Sql\spUSCIS_Transaction_GetByCase.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Sql\spUSCIS_Transaction_GetByCase.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Sql\spUSCIS_Transaction_Insert.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Sql\spUSCIS_Transaction_Insert.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Sql\spUSCIS_Transaction_Update.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Sql\spUSCIS_Transaction_Update.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="USCISConfiguration.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\USCISConfiguration.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Employee\RemoteCase_Live.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Employee\RemoteCase_Live.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Employee\LocalCase.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Employee\LocalCase.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Employee\RemoteCase.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Employee\RemoteCase.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Employee\RemoteCase_Test.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Employee\RemoteCase_Test.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="USCISEnumerations.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\USCISEnumerations.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="USCISException.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\USCISException.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Properties\Settings.Designer.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="USCISFactory.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\USCISFactory.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="WebService\IResponse.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\WebService\IResponse.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="WebService\IRequest.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\WebService\IRequest.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="WebService\Request_Live.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\WebService\Request_Live.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="WebService\Response_Live.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\WebService\Response_Live.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="WebService\ProcessIds.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\WebService\ProcessIds.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="WebService\Request.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\WebService\Request.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="WebService\Response.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\WebService\Response.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="WebService\Request_Test.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\WebService\Request_Test.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="WebService\Response_Test.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\WebService\Response_Test.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Xml\LogWriter.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Xml\LogWriter.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Xml\ProcessWriter.cs" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Xml\ProcessWriter.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="app.config" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\app.config">
+</Event><Event ErrorLevel="2" Project="I9.USCIS.Wrapper" Source="com\vis-dhs\test\EmployerWebServiceV17.wsdl" Description="Failed to backup file as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\com\vis-dhs\test\EmployerWebServiceV17.wsdl">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="com\vis-dhs\test\Reference.map" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\com\vis-dhs\test\Reference.map">
+</Event><Event ErrorLevel="2" Project="I9.USCIS.Wrapper" Source="com\vis-dhs\www\EmployerWebServiceV17.wsdl" Description="Failed to backup file as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\com\vis-dhs\www\EmployerWebServiceV17.wsdl">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="com\vis-dhs\www\Reference.map" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\com\vis-dhs\www\Reference.map">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="I9.USCIS.Wrapper.snk" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\I9.USCIS.Wrapper.snk">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="Properties\Settings.settings" Description="File successfully backed up as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\Properties\Settings.settings">
+</Event><Event ErrorLevel="2" Project="I9.USCIS.Wrapper" Source="com\vis-dhs\test\EmployerWebServiceV17.disco" Description="Failed to backup file as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\com\vis-dhs\test\EmployerWebServiceV17.disco">
+</Event><Event ErrorLevel="2" Project="I9.USCIS.Wrapper" Source="com\vis-dhs\www\EmployerWebServiceV17.disco" Description="Failed to backup file as C:\SVN\trunk\USCIS V-19\I9.USCIS.Wrapper\Backup\com\vis-dhs\www\EmployerWebServiceV17.disco">
+</Event><Event ErrorLevel="1" Project="I9.USCIS.Wrapper" Source="I9.USCIS.Wrapper.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="I9.USCIS.Wrapper.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="I9.USCIS.Wrapper" Source="I9.USCIS.Wrapper.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="I9.USCIS.Wrapper.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="I9.USCIS.Wrapper.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.Wrapper" Source="I9.USCIS.Wrapper.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

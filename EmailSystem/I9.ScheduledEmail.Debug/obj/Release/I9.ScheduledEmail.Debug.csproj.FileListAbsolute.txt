@@ -1,0 +1,8 @@
+C:\Dev\EmailSystem\I9.ScheduledEmail.Debug\obj\Release\ResolveAssemblyReference.cache
+C:\Dev\EmailSystem\I9.ScheduledEmail.Debug\obj\Release\I9.ScheduledEmail.Debug.Properties.Resources.resources
+C:\Dev\EmailSystem\I9.ScheduledEmail.Debug\obj\Release\I9.ScheduledEmail.Debug.MyWindow.resources
+C:\Dev\EmailSystem\I9.ScheduledEmail.Debug\obj\Release\I9.ScheduledEmail.Debug.csproj.GenerateResource.Cache
+C:\Dev\EmailSystem\I9.ScheduledEmail.Debug\bin\Release\I9.ScheduledEmail.Debug.exe.config
+C:\Dev\EmailSystem\I9.ScheduledEmail.Debug\bin\Release\I9.ScheduledEmail.Debug.exe
+C:\Dev\EmailSystem\I9.ScheduledEmail.Debug\bin\Release\Fdbl.Toolkit.dll
+C:\Dev\EmailSystem\I9.ScheduledEmail.Debug\obj\Release\I9.ScheduledEmail.Debug.exe

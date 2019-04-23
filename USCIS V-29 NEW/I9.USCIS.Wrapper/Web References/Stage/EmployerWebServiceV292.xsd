@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="https://e-verify.uscis.gov/WebService/EmployerService/V29" elementFormDefault="qualified" targetNamespace="https://e-verify.uscis.gov/WebService/EmployerService/V29" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://stage.n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc?xsd=xsd2" namespace="https://e-verify.uscis.gov/WebService/EmployerService/V29/" />
+  <xs:element name="VerifyConnection">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VerifyConnectionResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CloseCase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q1:CloseCaseRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CloseCaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="CloseCaseResult" type="q2:CloseCaseResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAvailableDocumentTypes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q3:GetAvailableDocumentTypesRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAvailableDocumentTypesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="GetAvailableDocumentTypesResult" type="q4:GetAvailableDocumentTypesResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseClosureReasons">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q5:GetCaseClosureReasonsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseClosureReasonsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="GetCaseClosureReasonsResult" type="q6:GetCaseClosureReasonsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q7:GetCaseDetailsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseDetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="GetCaseDetailsResult" type="q8:GetCaseDetailsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseDhsReverifyFields">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q9:GetCaseDhsReverifyFieldsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseDhsReverifyFieldsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="GetCaseDhsReverifyFieldsResult" type="q10:GetCaseDhsReverifyFieldsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCitizenshipStatuses">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCitizenshipStatusesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="GetCitizenshipStatusesResult" type="q11:GetCitizenshipStatusesResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCountryOfIssuanceList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCountryOfIssuanceListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="GetCountryOfIssuanceListResult" type="q12:GetCountryOfIssuanceListResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDuplicateCaseContinueReasons">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDuplicateCaseContinueReasonsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="GetDuplicateCaseContinueReasonsResult" type="q13:GetDuplicateCaseContinueReasonsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmploymentVerificationFields">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q14:GetEmploymentVerificationFieldsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetEmploymentVerificationFieldsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="GetEmploymentVerificationFieldsResult" type="q15:GetEmploymentVerificationFieldsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIssuingAuthorities">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q16:GetIssuingAuthoritiesRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetIssuingAuthoritiesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="GetIssuingAuthoritiesResult" type="q17:GetIssuingAuthoritiesResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLateVerificationReasons">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetLateVerificationReasonsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="GetLateVerificationReasonsResult" type="q18:GetLateVerificationReasonsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListBCDocumentTypes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q19:GetListBCDocumentTypesRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListBCDocumentTypesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="GetListBCDocumentTypesResult" type="q20:GetListBCDocumentTypesResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSupportingDocumentTypes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q21:GetSupportingDocumentTypesRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSupportingDocumentTypesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="GetSupportingDocumentTypesResult" type="q22:GetSupportingDocumentTypesResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDuplicateCaseList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q23:GetDuplicateCaseListRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDuplicateCaseListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="GetDuplicateCaseListResult" type="q24:GetDuplicateCaseListResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitInitialVerification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q25:SubmitInitialVerificationRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitInitialVerificationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="SubmitInitialVerificationResult" type="q26:SubmitInitialVerificationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveLetter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q27:RetrieveLetterRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveLetterResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="RetrieveLetterResult" type="q28:RetrieveLetterResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitDhsReverify">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q29:SubmitDhsReverifyRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitDhsReverifyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="SubmitDhsReverifyResult" type="q30:SubmitDhsReverifyResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitAdditionalVerification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q31:SubmitAdditionalVerificationRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitAdditionalVerificationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="SubmitAdditionalVerificationResult" type="q32:SubmitAdditionalVerificationResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitSsaResubmittal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q33="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q33:SubmitSsaResubmittalRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitSsaResubmittalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="SubmitSsaResubmittalResult" type="q34:SubmitSsaResubmittalResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitSsaReverify">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q35:SubmitSsaReverifyRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitSsaReverifyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q36="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="SubmitSsaReverifyResult" type="q36:SubmitSsaReverifyResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContinueDuplicateCase">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q37:ContinueDuplicateCaseRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContinueDuplicateCaseResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q38="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="ContinueDuplicateCaseResult" type="q38:ContinueDuplicateCaseResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContinueDuplicateCaseWithChange">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q39:ContinueDuplicateCaseWithChangeRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContinueDuplicateCaseWithChangeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q40="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="ContinueDuplicateCaseWithChangeResult" type="q40:ContinueDuplicateCaseWithChangeResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitSsaReferral">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q41:SubmitSsaReferralRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitSsaReferralResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q42="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="SubmitSsaReferralResult" type="q42:SubmitSsaReferralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetSsaTncNotification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q43="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q43:SetSsaTncNotificationRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetSsaTncNotificationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDhsTncNotification">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q44="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q44:SetDhsTncNotificationRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SetDhsTncNotificationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitDhsReferral">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q45="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q45:SubmitDhsReferralRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitDhsReferralResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q46="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="SubmitDhsReferralResult" type="q46:SubmitDhsReferralResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCasesByAlertType">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q47="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q47:GetCasesByAlertTypeRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCasesByAlertTypeResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q48="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="GetCasesByAlertTypeResult" type="q48:GetCasesByAlertTypeResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseAlertCounts">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCaseAlertCountsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q49="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="GetCaseAlertCountsResult" type="q49:GetCaseAlertCountsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveDocumentPhoto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q50="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q50:RetrieveDocumentPhotoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RetrieveDocumentPhotoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q51="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="RetrieveDocumentPhotoResult" type="q51:RetrieveDocumentPhotoResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmDocumentPhoto">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q52="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q52:ConfirmDocumentPhotoRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmDocumentPhotoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q53="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="ConfirmDocumentPhotoResult" type="q53:ConfirmDocumentPhotoResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetResolvedCases">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q54="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q54:GetResolvedCasesRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetResolvedCasesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="GetResolvedCasesResult" type="q55:GetResolvedCasesResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmResolvedCasesReceived">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q56="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="request" type="q56:ConfirmResolvedCasesReceivedRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConfirmResolvedCasesReceivedResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="https://e-verify.uscis.gov/WebService/EmployerService/V29/" minOccurs="1" name="ConfirmResolvedCasesReceivedResult" type="q57:ConfirmResolvedCasesReceivedResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

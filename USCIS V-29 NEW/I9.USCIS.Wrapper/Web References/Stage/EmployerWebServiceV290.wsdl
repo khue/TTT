@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="https://e-verify.uscis.gov/WebService/EmployerService/V29" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="https://e-verify.uscis.gov/WebService/EmployerService/V29" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="https://e-verify.uscis.gov/WebService/EmployerService/V29/Imports">
+      <xsd:import schemaLocation="https://stage.n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc?xsd=xsd0" namespace="https://e-verify.uscis.gov/WebService/EmployerService/V29" />
+      <xsd:import schemaLocation="https://stage.n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://stage.n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc?xsd=xsd2" namespace="https://e-verify.uscis.gov/WebService/EmployerService/V29/" />
+      <xsd:import schemaLocation="https://stage.n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc?xsd=xsd3" />
+      <xsd:import schemaLocation="https://stage.n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEmployerWebServiceV29_VerifyConnection_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerifyConnection" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_VerifyConnection_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerifyConnectionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_CloseCase_InputMessage">
+    <wsdl:part name="parameters" element="tns:CloseCase" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_CloseCase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CloseCaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetAvailableDocumentTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvailableDocumentTypes" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetAvailableDocumentTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAvailableDocumentTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetCaseClosureReasons_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaseClosureReasons" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetCaseClosureReasons_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaseClosureReasonsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetCaseDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaseDetails" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetCaseDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaseDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetCaseDhsReverifyFields_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaseDhsReverifyFields" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetCaseDhsReverifyFields_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaseDhsReverifyFieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetCitizenshipStatuses_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCitizenshipStatuses" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetCitizenshipStatuses_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCitizenshipStatusesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetCountryOfIssuanceList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountryOfIssuanceList" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetCountryOfIssuanceList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCountryOfIssuanceListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetDuplicateCaseContinueReasons_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDuplicateCaseContinueReasons" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetDuplicateCaseContinueReasons_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDuplicateCaseContinueReasonsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetEmploymentVerificationFields_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmploymentVerificationFields" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetEmploymentVerificationFields_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetEmploymentVerificationFieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetIssuingAuthorities_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssuingAuthorities" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetIssuingAuthorities_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetIssuingAuthoritiesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetLateVerificationReasons_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetLateVerificationReasons" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetLateVerificationReasons_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetLateVerificationReasonsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetListBCDocumentTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListBCDocumentTypes" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetListBCDocumentTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListBCDocumentTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetSupportingDocumentTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSupportingDocumentTypes" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetSupportingDocumentTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSupportingDocumentTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetDuplicateCaseList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDuplicateCaseList" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetDuplicateCaseList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDuplicateCaseListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_SubmitInitialVerification_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitInitialVerification" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_SubmitInitialVerification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitInitialVerificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_RetrieveLetter_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveLetter" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_RetrieveLetter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveLetterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_SubmitDhsReverify_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitDhsReverify" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_SubmitDhsReverify_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitDhsReverifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_SubmitAdditionalVerification_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitAdditionalVerification" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_SubmitAdditionalVerification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitAdditionalVerificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_SubmitSsaResubmittal_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitSsaResubmittal" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_SubmitSsaResubmittal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitSsaResubmittalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_SubmitSsaReverify_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitSsaReverify" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_SubmitSsaReverify_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitSsaReverifyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_ContinueDuplicateCase_InputMessage">
+    <wsdl:part name="parameters" element="tns:ContinueDuplicateCase" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_ContinueDuplicateCase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ContinueDuplicateCaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_ContinueDuplicateCaseWithChange_InputMessage">
+    <wsdl:part name="parameters" element="tns:ContinueDuplicateCaseWithChange" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_ContinueDuplicateCaseWithChange_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ContinueDuplicateCaseWithChangeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_SubmitSsaReferral_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitSsaReferral" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_SubmitSsaReferral_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitSsaReferralResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_SetSsaTncNotification_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetSsaTncNotification" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_SetSsaTncNotification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetSsaTncNotificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_SetDhsTncNotification_InputMessage">
+    <wsdl:part name="parameters" element="tns:SetDhsTncNotification" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_SetDhsTncNotification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SetDhsTncNotificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_SubmitDhsReferral_InputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitDhsReferral" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_SubmitDhsReferral_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SubmitDhsReferralResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetCasesByAlertType_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCasesByAlertType" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetCasesByAlertType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCasesByAlertTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetCaseAlertCounts_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaseAlertCounts" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetCaseAlertCounts_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCaseAlertCountsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_RetrieveDocumentPhoto_InputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveDocumentPhoto" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_RetrieveDocumentPhoto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RetrieveDocumentPhotoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_ConfirmDocumentPhoto_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmDocumentPhoto" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_ConfirmDocumentPhoto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmDocumentPhotoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetResolvedCases_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetResolvedCases" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_GetResolvedCases_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetResolvedCasesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_ConfirmResolvedCasesReceived_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmResolvedCasesReceived" />
+  </wsdl:message>
+  <wsdl:message name="IEmployerWebServiceV29_ConfirmResolvedCasesReceived_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConfirmResolvedCasesReceivedResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IEmployerWebServiceV29">
+    <wsdl:operation name="VerifyConnection">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/VerifyConnection" message="tns:IEmployerWebServiceV29_VerifyConnection_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/VerifyConnectionResponse" message="tns:IEmployerWebServiceV29_VerifyConnection_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CloseCase">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/CloseCase" message="tns:IEmployerWebServiceV29_CloseCase_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/CloseCaseResponse" message="tns:IEmployerWebServiceV29_CloseCase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableDocumentTypes">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetAvailableDocumentTypes" message="tns:IEmployerWebServiceV29_GetAvailableDocumentTypes_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetAvailableDocumentTypesResponse" message="tns:IEmployerWebServiceV29_GetAvailableDocumentTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseClosureReasons">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCaseClosureReasons" message="tns:IEmployerWebServiceV29_GetCaseClosureReasons_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCaseClosureReasonsResponse" message="tns:IEmployerWebServiceV29_GetCaseClosureReasons_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseDetails">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCaseDetails" message="tns:IEmployerWebServiceV29_GetCaseDetails_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCaseDetailsResponse" message="tns:IEmployerWebServiceV29_GetCaseDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseDhsReverifyFields">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCaseDhsReverifyFields" message="tns:IEmployerWebServiceV29_GetCaseDhsReverifyFields_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCaseDhsReverifyFieldsResponse" message="tns:IEmployerWebServiceV29_GetCaseDhsReverifyFields_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCitizenshipStatuses">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCitizenshipStatuses" message="tns:IEmployerWebServiceV29_GetCitizenshipStatuses_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCitizenshipStatusesResponse" message="tns:IEmployerWebServiceV29_GetCitizenshipStatuses_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCountryOfIssuanceList">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCountryOfIssuanceList" message="tns:IEmployerWebServiceV29_GetCountryOfIssuanceList_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCountryOfIssuanceListResponse" message="tns:IEmployerWebServiceV29_GetCountryOfIssuanceList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDuplicateCaseContinueReasons">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetDuplicateCaseContinueReasons" message="tns:IEmployerWebServiceV29_GetDuplicateCaseContinueReasons_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetDuplicateCaseContinueReasonsResponse" message="tns:IEmployerWebServiceV29_GetDuplicateCaseContinueReasons_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmploymentVerificationFields">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetEmploymentVerificationFields" message="tns:IEmployerWebServiceV29_GetEmploymentVerificationFields_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetEmploymentVerificationFieldsResponse" message="tns:IEmployerWebServiceV29_GetEmploymentVerificationFields_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetIssuingAuthorities">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetIssuingAuthorities" message="tns:IEmployerWebServiceV29_GetIssuingAuthorities_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetIssuingAuthoritiesResponse" message="tns:IEmployerWebServiceV29_GetIssuingAuthorities_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLateVerificationReasons">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetLateVerificationReasons" message="tns:IEmployerWebServiceV29_GetLateVerificationReasons_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetLateVerificationReasonsResponse" message="tns:IEmployerWebServiceV29_GetLateVerificationReasons_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListBCDocumentTypes">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetListBCDocumentTypes" message="tns:IEmployerWebServiceV29_GetListBCDocumentTypes_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetListBCDocumentTypesResponse" message="tns:IEmployerWebServiceV29_GetListBCDocumentTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSupportingDocumentTypes">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetSupportingDocumentTypes" message="tns:IEmployerWebServiceV29_GetSupportingDocumentTypes_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetSupportingDocumentTypesResponse" message="tns:IEmployerWebServiceV29_GetSupportingDocumentTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDuplicateCaseList">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetDuplicateCaseList" message="tns:IEmployerWebServiceV29_GetDuplicateCaseList_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetDuplicateCaseListResponse" message="tns:IEmployerWebServiceV29_GetDuplicateCaseList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitInitialVerification">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitInitialVerification" message="tns:IEmployerWebServiceV29_SubmitInitialVerification_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitInitialVerificationResponse" message="tns:IEmployerWebServiceV29_SubmitInitialVerification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveLetter">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/RetrieveLetter" message="tns:IEmployerWebServiceV29_RetrieveLetter_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/RetrieveLetterResponse" message="tns:IEmployerWebServiceV29_RetrieveLetter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitDhsReverify">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitDhsReverify" message="tns:IEmployerWebServiceV29_SubmitDhsReverify_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitDhsReverifyResponse" message="tns:IEmployerWebServiceV29_SubmitDhsReverify_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitAdditionalVerification">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitAdditionalVerification" message="tns:IEmployerWebServiceV29_SubmitAdditionalVerification_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitAdditionalVerificationResponse" message="tns:IEmployerWebServiceV29_SubmitAdditionalVerification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitSsaResubmittal">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitSsaResubmittal" message="tns:IEmployerWebServiceV29_SubmitSsaResubmittal_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitSsaResubmittalResponse" message="tns:IEmployerWebServiceV29_SubmitSsaResubmittal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitSsaReverify">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitSsaReverify" message="tns:IEmployerWebServiceV29_SubmitSsaReverify_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitSsaReverifyResponse" message="tns:IEmployerWebServiceV29_SubmitSsaReverify_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ContinueDuplicateCase">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/ContinueDuplicateCase" message="tns:IEmployerWebServiceV29_ContinueDuplicateCase_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/ContinueDuplicateCaseResponse" message="tns:IEmployerWebServiceV29_ContinueDuplicateCase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ContinueDuplicateCaseWithChange">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/ContinueDuplicateCaseWithChange" message="tns:IEmployerWebServiceV29_ContinueDuplicateCaseWithChange_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/ContinueDuplicateCaseWithChangeResponse" message="tns:IEmployerWebServiceV29_ContinueDuplicateCaseWithChange_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitSsaReferral">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitSsaReferral" message="tns:IEmployerWebServiceV29_SubmitSsaReferral_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitSsaReferralResponse" message="tns:IEmployerWebServiceV29_SubmitSsaReferral_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetSsaTncNotification">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SetSsaTncNotification" message="tns:IEmployerWebServiceV29_SetSsaTncNotification_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SetSsaTncNotificationResponse" message="tns:IEmployerWebServiceV29_SetSsaTncNotification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SetDhsTncNotification">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SetDhsTncNotification" message="tns:IEmployerWebServiceV29_SetDhsTncNotification_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SetDhsTncNotificationResponse" message="tns:IEmployerWebServiceV29_SetDhsTncNotification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitDhsReferral">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitDhsReferral" message="tns:IEmployerWebServiceV29_SubmitDhsReferral_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitDhsReferralResponse" message="tns:IEmployerWebServiceV29_SubmitDhsReferral_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCasesByAlertType">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCasesByAlertType" message="tns:IEmployerWebServiceV29_GetCasesByAlertType_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCasesByAlertTypeResponse" message="tns:IEmployerWebServiceV29_GetCasesByAlertType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseAlertCounts">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCaseAlertCounts" message="tns:IEmployerWebServiceV29_GetCaseAlertCounts_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCaseAlertCountsResponse" message="tns:IEmployerWebServiceV29_GetCaseAlertCounts_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveDocumentPhoto">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/RetrieveDocumentPhoto" message="tns:IEmployerWebServiceV29_RetrieveDocumentPhoto_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/RetrieveDocumentPhotoResponse" message="tns:IEmployerWebServiceV29_RetrieveDocumentPhoto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmDocumentPhoto">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/ConfirmDocumentPhoto" message="tns:IEmployerWebServiceV29_ConfirmDocumentPhoto_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/ConfirmDocumentPhotoResponse" message="tns:IEmployerWebServiceV29_ConfirmDocumentPhoto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetResolvedCases">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetResolvedCases" message="tns:IEmployerWebServiceV29_GetResolvedCases_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetResolvedCasesResponse" message="tns:IEmployerWebServiceV29_GetResolvedCases_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmResolvedCasesReceived">
+      <wsdl:input wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/ConfirmResolvedCasesReceived" message="tns:IEmployerWebServiceV29_ConfirmResolvedCasesReceived_InputMessage" />
+      <wsdl:output wsam:Action="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/ConfirmResolvedCasesReceivedResponse" message="tns:IEmployerWebServiceV29_ConfirmResolvedCasesReceived_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

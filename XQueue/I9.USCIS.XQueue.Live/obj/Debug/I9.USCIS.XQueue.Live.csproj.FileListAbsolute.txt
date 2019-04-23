@@ -1,0 +1,25 @@
+C:\GITFragomen\i9\EV 28 XQueue\I9.USCIS.XQueue.Live\obj\Debug\I9.USCIS.XQueue.Live.csproj.CoreCompileInputs.cache
+C:\GITFragomen\i9\EV 28 XQueue\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.XQueue.Live.exe.config
+C:\GITFragomen\i9\EV 28 XQueue\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.XQueue.Live.exe
+C:\GITFragomen\i9\EV 28 XQueue\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.XQueue.Live.pdb
+C:\GITFragomen\i9\EV 28 XQueue\I9.USCIS.XQueue.Live\bin\Debug\Fdbl.Toolkit.dll
+C:\GITFragomen\i9\EV 28 XQueue\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.Wrapper.dll
+C:\GITFragomen\i9\EV 28 XQueue\I9.USCIS.XQueue.Live\bin\Debug\Microsoft.Web.Services2.dll
+C:\GITFragomen\i9\EV 28 XQueue\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.Wrapper.pdb
+C:\GITFragomen\i9\EV 28 XQueue\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.Wrapper.dll.config
+C:\GITFragomen\i9\EV 28 XQueue\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.Wrapper.XmlSerializers.dll
+C:\GITFragomen\i9\EV 28 XQueue\I9.USCIS.XQueue.Live\obj\Debug\I9.USCIS.XQueue.Live.exe
+C:\GITFragomen\i9\EV 28 XQueue\I9.USCIS.XQueue.Live\obj\Debug\I9.USCIS.XQueue.Live.pdb
+C:\GITFragomen\i9\EV 28 XQueue\I9.USCIS.XQueue.Live\obj\Debug\I9.USCIS.XQueue.Live.csprojResolveAssemblyReference.cache
+C:\GITFragomen\i9\XQueue\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.XQueue.Live.exe.config
+C:\GITFragomen\i9\XQueue\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.XQueue.Live.exe
+C:\GITFragomen\i9\XQueue\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.XQueue.Live.pdb
+C:\GITFragomen\i9\XQueue\I9.USCIS.XQueue.Live\bin\Debug\Fdbl.Toolkit.dll
+C:\GITFragomen\i9\XQueue\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.Wrapper.dll
+C:\GITFragomen\i9\XQueue\I9.USCIS.XQueue.Live\bin\Debug\Microsoft.Web.Services2.dll
+C:\GITFragomen\i9\XQueue\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.Wrapper.pdb
+C:\GITFragomen\i9\XQueue\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.Wrapper.dll.config
+C:\GITFragomen\i9\XQueue\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.Wrapper.XmlSerializers.dll
+C:\GITFragomen\i9\XQueue\I9.USCIS.XQueue.Live\obj\Debug\I9.USCIS.XQueue.Live.csproj.CoreCompileInputs.cache
+C:\GITFragomen\i9\XQueue\I9.USCIS.XQueue.Live\obj\Debug\I9.USCIS.XQueue.Live.exe
+C:\GITFragomen\i9\XQueue\I9.USCIS.XQueue.Live\obj\Debug\I9.USCIS.XQueue.Live.pdb

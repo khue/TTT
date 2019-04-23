@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{12AE8F96-3482-47F6-8547-EDBF93242CD7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>I9.USCIS.Wrapper</RootNamespace>
+    <AssemblyName>I9.USCIS.Wrapper</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>I9.USCIS.Wrapper.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Fdbl.Toolkit, Version=0.99.1013.2008, Culture=neutral, PublicKeyToken=3079cd60a15c90b2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Version 2\3rd.Party.Assemblies\Fdbl.Toolkit.0.99.1013.2008\bin\Release\Fdbl.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Services2, Version=2.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\..\Version 2\3rd.Party.Assemblies\Microsoft.Web.Services2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="com\vis-dhs\ICaseListArray.cs" />
+    <Compile Include="com\vis-dhs\ICitizenshipCodeListArray.cs" />
+    <Compile Include="com\vis-dhs\IDocTypeListArray.cs" />
+    <Compile Include="com\vis-dhs\IFieldListArray.cs" />
+    <Compile Include="com\vis-dhs\test\Reference.cs" />
+    <Compile Include="com\vis-dhs\www\Reference.cs" />
+    <Compile Include="Employee\IRemoteCase.cs" />
+    <Compile Include="Employee\UploadedPhoto.cs" />
+    <Compile Include="PDFConvert.cs" />
+    <Compile Include="Sql\spUSCISDuplicateCases_Insert.cs" />
+    <Compile Include="Sql\spUSCISCaseDetails_Insert.cs" />
+    <Compile Include="Sql\spUSCISPhoto_Get.cs" />
+    <Compile Include="Sql\spUSCISPDFLetter_Insert.cs" />
+    <Compile Include="Sql\spUSCISPhoto_Insert.cs" />
+    <Compile Include="Sql\spUSCIS_OnDemandEmail_Insert.cs" />
+    <Compile Include="Sql\spUSCIS_Request_UpdateFromXQueue.cs" />
+    <Compile Include="Sql\spUSCIS_QueueFuture_Insert.cs" />
+    <Compile Include="Sql\spUSCIS_ConsoleLink_Insert.cs" />
+    <Compile Include="Sql\spUSCIS_Closure_Get.cs" />
+    <Compile Include="Sql\spUSCIS_EmployeeI9_GetDetails.cs" />
+    <Compile Include="Sql\spUSCIS_EmployeeI9_GetIdentities.cs" />
+    <Compile Include="Sql\spUSCIS_Log_Insert.cs" />
+    <Compile Include="Sql\spUSCIS_QueueError_Insert.cs" />
+    <Compile Include="Sql\spUSCIS_Request_Insert.cs" />
+    <Compile Include="Sql\spUSCIS_Response_Insert.cs" />
+    <Compile Include="Sql\spUSCIS_Transaction_GetByCase.cs" />
+    <Compile Include="Sql\spUSCIS_Transaction_Insert.cs" />
+    <Compile Include="Sql\spUSCIS_Transaction_Update.cs" />
+    <Compile Include="USCISConfiguration.cs" />
+    <Compile Include="Employee\RemoteCase_Live.cs" />
+    <Compile Include="Employee\LocalCase.cs" />
+    <Compile Include="Employee\RemoteCase.cs" />
+    <Compile Include="Employee\RemoteCase_Test.cs" />
+    <Compile Include="USCISEnumerations.cs" />
+    <Compile Include="USCISException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="USCISFactory.cs" />
+    <Compile Include="Web References\Production\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\Stage\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="WebService\IResponse.cs" />
+    <Compile Include="WebService\IRequest.cs" />
+    <Compile Include="WebService\Request_Live.cs" />
+    <Compile Include="WebService\Response_Live.cs" />
+    <Compile Include="WebService\ProcessIds.cs" />
+    <Compile Include="WebService\Request.cs" />
+    <Compile Include="WebService\Response.cs" />
+    <Compile Include="WebService\Request_Test.cs" />
+    <Compile Include="WebService\Response_Test.cs" />
+    <Compile Include="Xml\LogWriter.cs" />
+    <Compile Include="Xml\ProcessWriter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="I9.USCIS.Wrapper.snk" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Production\CloseCaseResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\ConfirmDocumentPhotoResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\ConfirmResolvedCasesReceivedResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\ContinueDuplicateCaseResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\ContinueDuplicateCaseWithChangeResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\EmployerWebServiceV29.wsdl" />
+    <None Include="Web References\Production\EmployerWebServiceV29.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Production\EmployerWebServiceV290.wsdl" />
+    <None Include="Web References\Production\EmployerWebServiceV290.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Production\EmployerWebServiceV291.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Production\EmployerWebServiceV292.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Production\EmployerWebServiceV293.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Production\GetAvailableDocumentTypesResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\GetCaseAlertCountsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\GetCaseClosureReasonsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\GetCaseDetailsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\GetCaseDhsReverifyFieldsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\GetCasesByAlertTypeResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\GetCitizenshipStatusesResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\GetCountryOfIssuanceListResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\GetDuplicateCaseContinueReasonsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\GetDuplicateCaseListResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\GetEmploymentVerificationFieldsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\GetIssuingAuthoritiesResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\GetLateVerificationReasonsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\GetListBCDocumentTypesResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\GetResolvedCasesResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\GetSupportingDocumentTypesResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Production\RetrieveDocumentPhotoResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\RetrieveLetterResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\SubmitAdditionalVerificationResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\SubmitDhsReferralResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\SubmitDhsReverifyResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\SubmitInitialVerificationResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\SubmitSsaReferralResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\SubmitSsaResubmittalResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Production\SubmitSsaReverifyResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\CloseCaseResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\ConfirmDocumentPhotoResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\ConfirmResolvedCasesReceivedResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\ContinueDuplicateCaseResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\ContinueDuplicateCaseWithChangeResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\EmployerWebServiceV29.wsdl" />
+    <None Include="Web References\Stage\EmployerWebServiceV29.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Stage\EmployerWebServiceV290.wsdl" />
+    <None Include="Web References\Stage\EmployerWebServiceV290.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Stage\EmployerWebServiceV291.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Stage\EmployerWebServiceV292.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Stage\EmployerWebServiceV293.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\Stage\GetAvailableDocumentTypesResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\GetCaseAlertCountsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\GetCaseClosureReasonsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\GetCaseDetailsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\GetCaseDhsReverifyFieldsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\GetCasesByAlertTypeResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\GetCitizenshipStatusesResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\GetCountryOfIssuanceListResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\GetDuplicateCaseContinueReasonsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\GetDuplicateCaseListResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\GetEmploymentVerificationFieldsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\GetIssuingAuthoritiesResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\GetLateVerificationReasonsResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\GetListBCDocumentTypesResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\GetResolvedCasesResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\GetSupportingDocumentTypesResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\Stage\RetrieveDocumentPhotoResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\RetrieveLetterResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\SubmitAdditionalVerificationResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\SubmitDhsReferralResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\SubmitDhsReverifyResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\SubmitInitialVerificationResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\SubmitSsaReferralResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\SubmitSsaResubmittalResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Stage\SubmitSsaReverifyResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Production\</RelPath>
+      <UpdateFromURL>https://n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>I9_USCIS_Wrapper_Production_EmployerWebServiceV29</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://stage.n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\Stage\</RelPath>
+      <UpdateFromURL>https://stage.n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>I9_USCIS_Wrapper_Stage_EmployerWebServiceV29</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\Stage\EmployerWebServiceV29.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\Production\EmployerWebServiceV29.disco" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

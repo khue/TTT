@@ -1,0 +1,38 @@
+C:\SVN\trunk\USCIS V-19\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.XQueue.Live.exe.config
+C:\SVN\trunk\USCIS V-19\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.XQueue.Live.exe
+C:\SVN\trunk\USCIS V-19\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.XQueue.Live.pdb
+C:\SVN\trunk\USCIS V-19\I9.USCIS.XQueue.Live\bin\Debug\Fdbl.Toolkit.dll
+C:\SVN\trunk\USCIS V-19\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.Wrapper.pdb
+C:\SVN\trunk\USCIS V-19\I9.USCIS.XQueue.Live\obj\Debug\ResolveAssemblyReference.cache
+C:\SVN\trunk\USCIS V-19\I9.USCIS.XQueue.Live\obj\Debug\I9.USCIS.XQueue.Live.exe
+C:\SVN\trunk\USCIS V-19\I9.USCIS.XQueue.Live\obj\Debug\I9.USCIS.XQueue.Live.pdb
+C:\SVN\trunk\USCIS V-19\I9.USCIS.XQueue.Live\bin\Debug\Microsoft.Web.Services2.dll
+C:\USCIS V-19\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.XQueue.Live.exe.config
+C:\USCIS V-19\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.XQueue.Live.exe
+C:\USCIS V-19\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.XQueue.Live.pdb
+C:\USCIS V-19\I9.USCIS.XQueue.Live\bin\Debug\Fdbl.Toolkit.dll
+C:\USCIS V-19\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.Wrapper.dll
+C:\USCIS V-19\I9.USCIS.XQueue.Live\bin\Debug\Microsoft.Web.Services2.dll
+C:\USCIS V-19\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.Wrapper.pdb
+C:\USCIS V-19\I9.USCIS.XQueue.Live\obj\Debug\ResolveAssemblyReference.cache
+C:\USCIS V-19\I9.USCIS.XQueue.Live\obj\Debug\I9.USCIS.XQueue.Live.exe
+C:\USCIS V-19\I9.USCIS.XQueue.Live\obj\Debug\I9.USCIS.XQueue.Live.pdb
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.XQueue.Live.exe.config
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.XQueue.Live.exe
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.XQueue.Live.pdb
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Live\bin\Debug\Fdbl.Toolkit.dll
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.Wrapper.dll
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Live\bin\Debug\Microsoft.Web.Services2.dll
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.Wrapper.pdb
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Live\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Live\obj\Debug\I9.USCIS.XQueue.Live.exe
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Live\obj\Debug\I9.USCIS.XQueue.Live.pdb
+C:\Dev\USCIS V-21 Newer\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.XQueue.Live.exe.config
+C:\Dev\USCIS V-21 Newer\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.XQueue.Live.exe
+C:\Dev\USCIS V-21 Newer\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.XQueue.Live.pdb
+C:\Dev\USCIS V-21 Newer\I9.USCIS.XQueue.Live\bin\Debug\Fdbl.Toolkit.dll
+C:\Dev\USCIS V-21 Newer\I9.USCIS.XQueue.Live\bin\Debug\I9.USCIS.Wrapper.dll
+C:\Dev\USCIS V-21 Newer\I9.USCIS.XQueue.Live\bin\Debug\Microsoft.Web.Services2.dll
+C:\Dev\USCIS V-21 Newer\I9.USCIS.XQueue.Live\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\USCIS V-21 Newer\I9.USCIS.XQueue.Live\obj\Debug\I9.USCIS.XQueue.Live.exe
+C:\Dev\USCIS V-21 Newer\I9.USCIS.XQueue.Live\obj\Debug\I9.USCIS.XQueue.Live.pdb

@@ -1,0 +1,14 @@
+C:\Dev\EmailSystem\I9.OnDemandEmail.Console\bin\Debug\I9.OnDemandEmail.Console.exe.config
+C:\Dev\EmailSystem\I9.OnDemandEmail.Console\bin\Debug\I9.OnDemandEmail.Console.exe
+C:\Dev\EmailSystem\I9.OnDemandEmail.Console\bin\Debug\I9.OnDemandEmail.Console.pdb
+C:\Dev\EmailSystem\I9.OnDemandEmail.Console\bin\Debug\Fdbl.Toolkit.dll
+C:\Dev\EmailSystem\I9.OnDemandEmail.Console\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\EmailSystem\I9.OnDemandEmail.Console\obj\Debug\I9.OnDemandEmail.Console.exe
+C:\Dev\EmailSystem\I9.OnDemandEmail.Console\obj\Debug\I9.OnDemandEmail.Console.pdb
+C:\GITFragomen\i9\EmailSystem\I9.OnDemandEmail.Console\obj\Debug\I9.OnDemandEmail.Console.csproj.CoreCompileInputs.cache
+C:\GITFragomen\i9\EmailSystem\I9.OnDemandEmail.Console\obj\Debug\I9.OnDemandEmail.Console.exe
+C:\GITFragomen\i9\EmailSystem\I9.OnDemandEmail.Console\obj\Debug\I9.OnDemandEmail.Console.pdb
+C:\GITFragomen\i9\EmailSystem\I9.OnDemandEmail.Console\bin\Debug\I9.OnDemandEmail.Console.exe.config
+C:\GITFragomen\i9\EmailSystem\I9.OnDemandEmail.Console\bin\Debug\I9.OnDemandEmail.Console.exe
+C:\GITFragomen\i9\EmailSystem\I9.OnDemandEmail.Console\bin\Debug\I9.OnDemandEmail.Console.pdb
+C:\GITFragomen\i9\EmailSystem\I9.OnDemandEmail.Console\bin\Debug\Fdbl.Toolkit.dll

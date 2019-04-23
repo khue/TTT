@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="https://n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc?wsdl" filename="EmployerWebServiceV29.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc?xsd=xsd3" filename="EmployerWebServiceV29.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc?xsd=xsd0" filename="EmployerWebServiceV290.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="https://n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc?wsdl=wsdl0" filename="EmployerWebServiceV290.wsdl" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc?xsd=xsd2" filename="EmployerWebServiceV291.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc?xsd=xsd4" filename="EmployerWebServiceV292.xsd" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.DiscoveryDocumentReference" url="https://n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc?disco" filename="EmployerWebServiceV29.disco" />
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.SchemaReference" url="https://n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc?xsd=xsd1" filename="EmployerWebServiceV293.xsd" />
+  </Results>
+</DiscoveryClientResultsFile>

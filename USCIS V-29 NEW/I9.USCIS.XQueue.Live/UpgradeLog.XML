@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="I9.USCIS.XQueue.Live">
+</Property><Property Name="Solution File" Value="C:\USCIS V-19\I9.USCIS.XQueue.Live\I9.USCIS.XQueue.Live.sln">
+</Property><Property Name="User Options File" Value="C:\USCIS V-19\I9.USCIS.XQueue.Live\I9.USCIS.XQueue.Live.suo">
+</Property><Property Name="Date" Value="Wednesday, August 04, 2010">
+</Property><Property Name="Time" Value="10:25 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="I9.USCIS.XQueue.Live.sln" Description="File successfully backed up as C:\USCIS V-19\I9.USCIS.XQueue.Live\Backup\I9.USCIS.XQueue.Live.sln">
+</Event><Event ErrorLevel="0" Project="" Source="I9.USCIS.XQueue.Live.suo" Description="File successfully backed up as C:\USCIS V-19\I9.USCIS.XQueue.Live\Backup\I9.USCIS.XQueue.Live.suo">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.XQueue.Live" Source="I9.USCIS.XQueue.Live.csproj" Description="Project file successfully backed up as C:\USCIS V-19\I9.USCIS.XQueue.Live\Backup\I9.USCIS.XQueue.Live.csproj">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.XQueue.Live" Source="I9.USCIS.XQueue.Live.csproj.user" Description="Project user file successfully backed up as C:\USCIS V-19\I9.USCIS.XQueue.Live\Backup\I9.USCIS.XQueue.Live.csproj.user">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.XQueue.Live" Source="Items\CaseInfo.cs" Description="File successfully backed up as C:\USCIS V-19\I9.USCIS.XQueue.Live\Backup\Items\CaseInfo.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.XQueue.Live" Source="MyConfiguration.cs" Description="File successfully backed up as C:\USCIS V-19\I9.USCIS.XQueue.Live\Backup\MyConfiguration.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.XQueue.Live" Source="MyConsole.cs" Description="File successfully backed up as C:\USCIS V-19\I9.USCIS.XQueue.Live\Backup\MyConsole.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.XQueue.Live" Source="MyException.cs" Description="File successfully backed up as C:\USCIS V-19\I9.USCIS.XQueue.Live\Backup\MyException.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.XQueue.Live" Source="Program.cs" Description="File successfully backed up as C:\USCIS V-19\I9.USCIS.XQueue.Live\Backup\Program.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.XQueue.Live" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\USCIS V-19\I9.USCIS.XQueue.Live\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.XQueue.Live" Source="Sql\spUSCIS_OnDemandEmail_Insert.cs" Description="File successfully backed up as C:\USCIS V-19\I9.USCIS.XQueue.Live\Backup\Sql\spUSCIS_OnDemandEmail_Insert.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.XQueue.Live" Source="Sql\spUSCIS_ResolvedCase_Insert.cs" Description="File successfully backed up as C:\USCIS V-19\I9.USCIS.XQueue.Live\Backup\Sql\spUSCIS_ResolvedCase_Insert.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.XQueue.Live" Source="Wrapper\QueueVerification.cs" Description="File successfully backed up as C:\USCIS V-19\I9.USCIS.XQueue.Live\Backup\Wrapper\QueueVerification.cs">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.XQueue.Live" Source="app.config" Description="File successfully backed up as C:\USCIS V-19\I9.USCIS.XQueue.Live\Backup\app.config">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.XQueue.Live" Source="app.ico" Description="File successfully backed up as C:\USCIS V-19\I9.USCIS.XQueue.Live\Backup\app.ico">
+</Event><Event ErrorLevel="1" Project="I9.USCIS.XQueue.Live" Source="I9.USCIS.XQueue.Live.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.XQueue.Live" Source="I9.USCIS.XQueue.Live.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="I9.USCIS.XQueue.Live" Source="I9.USCIS.XQueue.Live.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="I9.USCIS.XQueue.Live.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="I9.USCIS.XQueue.Live.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="I9.USCIS.XQueue.Live" Source="I9.USCIS.XQueue.Live.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

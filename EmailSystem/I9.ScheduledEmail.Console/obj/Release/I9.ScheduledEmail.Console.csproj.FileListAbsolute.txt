@@ -1,0 +1,17 @@
+C:\Dev\EmailSystem\I9.ScheduledEmail.Console\bin\Release\I9.ScheduledEmail.Console.exe.config
+C:\Dev\EmailSystem\I9.ScheduledEmail.Console\bin\Release\I9.ScheduledEmail.Console.exe
+C:\Dev\EmailSystem\I9.ScheduledEmail.Console\bin\Release\Fdbl.Toolkit.dll
+C:\Dev\EmailSystem\I9.ScheduledEmail.Console\obj\Release\ResolveAssemblyReference.cache
+C:\Dev\EmailSystem\I9.ScheduledEmail.Console\obj\Release\I9.ScheduledEmail.Console.exe
+C:\Dev\EmailSystem\I9.ScheduledEmail.Console\bin\Debug\I9.ScheduledEmail.Console.exe.config
+C:\Dev\EmailSystem\I9.ScheduledEmail.Console\bin\Debug\I9.ScheduledEmail.Console.exe
+C:\Dev\EmailSystem\I9.ScheduledEmail.Console\bin\Debug\Fdbl.Toolkit.dll
+C:\GITFragomen\i9\EmailSystem\I9.ScheduledEmail.Console\bin\Debug\I9.ScheduledEmail.Console.exe.config
+C:\GITFragomen\i9\EmailSystem\I9.ScheduledEmail.Console\bin\Debug\I9.ScheduledEmail.Console.exe
+C:\GITFragomen\i9\EmailSystem\I9.ScheduledEmail.Console\bin\Debug\Fdbl.Toolkit.dll
+C:\GITFragomen\i9\EmailSystem\I9.ScheduledEmail.Console\obj\Release\I9.ScheduledEmail.Console.csproj.CoreCompileInputs.cache
+C:\GITFragomen\i9\EmailSystem\I9.ScheduledEmail.Console\obj\Release\I9.ScheduledEmail.Console.exe
+C:\GITFragomen\i9\EmailSystem\I9.ScheduledEmail.Console\bin\Release\I9.ScheduledEmail.Console.exe.config
+C:\GITFragomen\i9\EmailSystem\I9.ScheduledEmail.Console\bin\Release\I9.ScheduledEmail.Console.exe
+C:\GITFragomen\i9\EmailSystem\I9.ScheduledEmail.Console\bin\Release\Fdbl.Toolkit.dll
+C:\GITFragomen\i9\EmailSystem\I9.ScheduledEmail.Console\obj\Release\I9.ScheduledEmail.Console.csprojResolveAssemblyReference.cache

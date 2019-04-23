@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<USCISProcess>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 5:01:21 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 5:01:21 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 5:11:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 5:11:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 5:21:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 5:21:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 5:31:20 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 5:31:20 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 5:41:20 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 5:41:20 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 5:51:20 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 5:51:20 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 6:01:20 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 6:01:20 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 6:11:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 6:11:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 6:21:20 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 6:21:20 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 6:31:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 6:31:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 6:41:20 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 6:41:20 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 6:51:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 6:51:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 7:01:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 7:01:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 7:11:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 7:11:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 7:21:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 7:21:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 7:31:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 7:31:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 7:41:20 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 7:41:20 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 7:51:20 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 7:51:20 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 8:01:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 8:01:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 8:11:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 8:11:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 8:21:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 8:21:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 8:31:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 8:31:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 8:41:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 8:41:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 8:51:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 8:51:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 9:01:18 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 9:01:18 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 9:11:18 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 9:11:18 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 9:21:18 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 9:21:18 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 9:31:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 9:31:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 9:41:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 9:41:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 9:51:18 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 9:51:18 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 10:01:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 10:01:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 10:11:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 10:11:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 10:21:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 10:21:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 10:31:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 10:31:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 10:41:18 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 10:41:18 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 10:51:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 10:51:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 11:01:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 11:01:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 11:11:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 11:11:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 11:21:19 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 11:21:19 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 11:31:18 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 11:31:18 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 11:41:18 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 11:41:18 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 11:51:18 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 11:51:18 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 12:01:19 PM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 12:01:19 PM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 12:11:19 PM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 12:11:19 PM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 12:21:19 PM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 12:21:19 PM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 12:31:18 PM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 12:31:18 PM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 12:41:18 PM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 12:41:18 PM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 12:51:19 PM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 12:51:19 PM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 1:01:19 PM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 1:01:19 PM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 10:29:27 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 10:29:27 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+<Transaction Id ="-1" Status ="pending">
+<Request DateTime="3/3/2018 10:30:13 AM" EmployeeId="-99" I9Id="-99" MethodName="EmpAckReceiptOfResolvedCaseNbr">EmployeeId=-99;I9Id=-99;CaseNumber=2018062020342GF</Request>
+<Response DateTime="3/3/2018 10:30:13 AM" CaseNbr="" LastName="" FirstName="" EligStatementCd="" EligStatementTxt="" EligStatementDetailsTxt="" AdditionalPerfind="" ReturnStatus="" ReturnStatusMsg="" DHSResponse="" ResolveDate="" UserField="" HadIssue="1"/>
+</Transaction>
+</USCISProcess>

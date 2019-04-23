@@ -1,0 +1,43 @@
+C:\SOS\USCIS\Kent's Updated version\I9.USCIS.XQueue.Test\obj\Release\ResolveAssemblyReference.cache
+C:\SOS\USCIS\Kent's Updated version\I9.USCIS.XQueue.Test\bin\Release\I9.USCIS.XQueue.Test.exe.config
+C:\SOS\USCIS\Kent's Updated version\I9.USCIS.XQueue.Test\bin\Release\I9.USCIS.XQueue.Test.exe
+C:\SOS\USCIS\Kent's Updated version\I9.USCIS.XQueue.Test\bin\Release\Fdbl.Toolkit.dll
+C:\SOS\USCIS\Kent's Updated version\I9.USCIS.XQueue.Test\bin\Release\I9.USCIS.Wrapper.dll
+C:\SOS\USCIS\Kent's Updated version\I9.USCIS.XQueue.Test\bin\Release\Microsoft.Web.Services2.dll
+C:\SOS\USCIS\Kent's Updated version\I9.USCIS.XQueue.Test\obj\Release\I9.USCIS.XQueue.Test.exe
+C:\SOS\USCIS\Kent's Updated version\I9.USCIS.XQueue.Test\bin\Release\I9.USCIS.Wrapper.pdb
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Test\bin\Release\I9.USCIS.XQueue.Test.exe.config
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Test\bin\Release\I9.USCIS.XQueue.Test.exe
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Test\bin\Release\I9.USCIS.Wrapper.dll
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Test\bin\Release\Microsoft.Web.Services2.dll
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Test\bin\Release\I9.USCIS.Wrapper.pdb
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Test\obj\Release\ResolveAssemblyReference.cache
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Test\obj\Release\I9.USCIS.XQueue.Test.exe
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Test\bin\Debug\I9.USCIS.XQueue.Test.exe.config
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Test\bin\Debug\I9.USCIS.XQueue.Test.exe
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Test\bin\Debug\I9.USCIS.Wrapper.dll
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Test\bin\Debug\Microsoft.Web.Services2.dll
+C:\Dev\USCIS V-21\I9.USCIS.XQueue.Test\bin\Debug\I9.USCIS.Wrapper.pdb
+C:\Dev\USCIS V-21 With AutoClose\I9.USCIS.XQueue.Test\bin\Debug\I9.USCIS.XQueue.Test.exe.config
+C:\Dev\USCIS V-21 With AutoClose\I9.USCIS.XQueue.Test\bin\Debug\I9.USCIS.XQueue.Test.exe
+C:\Dev\USCIS V-21 With AutoClose\I9.USCIS.XQueue.Test\bin\Debug\I9.USCIS.Wrapper.dll
+C:\Dev\USCIS V-21 With AutoClose\I9.USCIS.XQueue.Test\bin\Debug\Microsoft.Web.Services2.dll
+C:\Dev\USCIS V-21 With AutoClose\I9.USCIS.XQueue.Test\bin\Debug\I9.USCIS.Wrapper.pdb
+C:\Dev\USCIS V-21 With AutoClose\I9.USCIS.XQueue.Test\obj\Release\ResolveAssemblyReference.cache
+C:\Dev\USCIS V-21 With AutoClose\I9.USCIS.XQueue.Test\obj\Release\I9.USCIS.XQueue.Test.exe
+C:\Dev\USCIS V-22\I9.USCIS.XQueue.Test\bin\Debug\I9.USCIS.XQueue.Test.exe.config
+C:\Dev\USCIS V-22\I9.USCIS.XQueue.Test\bin\Debug\I9.USCIS.XQueue.Test.exe
+C:\Dev\USCIS V-22\I9.USCIS.XQueue.Test\bin\Debug\I9.USCIS.Wrapper.dll
+C:\Dev\USCIS V-22\I9.USCIS.XQueue.Test\bin\Debug\Microsoft.Web.Services2.dll
+C:\Dev\USCIS V-22\I9.USCIS.XQueue.Test\bin\Debug\I9.USCIS.Wrapper.XmlSerializers.dll
+C:\Dev\USCIS V-22\I9.USCIS.XQueue.Test\obj\Release\ResolveAssemblyReference.cache
+C:\Dev\USCIS V-22\I9.USCIS.XQueue.Test\obj\Release\I9.USCIS.XQueue.Test.exe
+C:\Dev\USCIS V-22\I9.USCIS.XQueue.Test\bin\Debug\I9.USCIS.Wrapper.pdb
+C:\SVN\trunk\USCIS V-23\I9.USCIS.XQueue.Test\bin\Debug\I9.USCIS.XQueue.Test.exe.config
+C:\SVN\trunk\USCIS V-23\I9.USCIS.XQueue.Test\bin\Debug\I9.USCIS.XQueue.Test.exe
+C:\SVN\trunk\USCIS V-23\I9.USCIS.XQueue.Test\bin\Debug\I9.USCIS.Wrapper.dll
+C:\SVN\trunk\USCIS V-23\I9.USCIS.XQueue.Test\bin\Debug\Microsoft.Web.Services2.dll
+C:\SVN\trunk\USCIS V-23\I9.USCIS.XQueue.Test\bin\Debug\I9.USCIS.Wrapper.pdb
+C:\SVN\trunk\USCIS V-23\I9.USCIS.XQueue.Test\bin\Debug\I9.USCIS.Wrapper.XmlSerializers.dll
+C:\SVN\trunk\USCIS V-23\I9.USCIS.XQueue.Test\obj\Release\ResolveAssemblyReference.cache
+C:\SVN\trunk\USCIS V-23\I9.USCIS.XQueue.Test\obj\Release\I9.USCIS.XQueue.Test.exe

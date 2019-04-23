@@ -1,0 +1,58 @@
+C:\SVN\trunk\USCIS V-24\I9.USCIS.Console\obj\Debug\I9.USCIS.Console.pdb
+C:\SVN\trunk\USCIS V-24\I9.USCIS.Console\bin\Debug\I9.USCIS.Console.exe.config
+C:\SVN\trunk\USCIS V-24\I9.USCIS.Console\bin\Debug\I9.USCIS.Console.exe
+C:\SVN\trunk\USCIS V-24\I9.USCIS.Console\bin\Debug\I9.USCIS.Console.pdb
+C:\SVN\trunk\USCIS V-24\I9.USCIS.Console\bin\Debug\I9.USCIS.Wrapper.dll
+C:\SVN\trunk\USCIS V-24\I9.USCIS.Console\bin\Debug\Microsoft.Web.Services2.dll
+C:\SVN\trunk\USCIS V-24\I9.USCIS.Console\bin\Debug\I9.USCIS.Wrapper.XmlSerializers.dll
+C:\SVN\trunk\USCIS V-24\I9.USCIS.Console\obj\Debug\I9.USCIS.Console.exe
+C:\SVN\trunk\USCIS V-24\I9.USCIS.Console\obj\Debug\I9.USCIS.Console.csprojResolveAssemblyReference.cache
+C:\SVN\trunk\USCIS V-24\I9.USCIS.Console\bin\Debug\I9.USCIS.Wrapper.pdb
+C:\i9servicecenter\trunk\USCIS V-25\I9.USCIS.Console\bin\Debug\I9.USCIS.Console.exe.config
+C:\i9servicecenter\trunk\USCIS V-25\I9.USCIS.Console\bin\Debug\I9.USCIS.Console.exe
+C:\i9servicecenter\trunk\USCIS V-25\I9.USCIS.Console\bin\Debug\I9.USCIS.Console.pdb
+C:\i9servicecenter\trunk\USCIS V-25\I9.USCIS.Console\bin\Debug\Microsoft.Web.Services2.dll
+C:\i9servicecenter\trunk\USCIS V-25\I9.USCIS.Console\bin\Debug\I9.USCIS.Wrapper.XmlSerializers.dll
+C:\i9servicecenter\trunk\USCIS V-25\I9.USCIS.Console\obj\Debug\I9.USCIS.Console.csprojResolveAssemblyReference.cache
+C:\i9servicecenter\trunk\USCIS V-25\I9.USCIS.Console\obj\Debug\I9.USCIS.Console.exe
+C:\i9servicecenter\trunk\USCIS V-25\I9.USCIS.Console\obj\Debug\I9.USCIS.Console.pdb
+C:\i9servicecenter\trunk\USCIS V-25\I9.USCIS.Console\bin\Debug\I9.USCIS.Wrapper.dll
+C:\i9servicecenter\trunk\USCIS V-25\I9.USCIS.Console\bin\Debug\I9.USCIS.Wrapper.pdb
+C:\SVN\trunk\USCIS V-25\I9.USCIS.Console\bin\Debug\I9.USCIS.Console.exe.config
+C:\SVN\trunk\USCIS V-25\I9.USCIS.Console\bin\Debug\I9.USCIS.Console.exe
+C:\SVN\trunk\USCIS V-25\I9.USCIS.Console\bin\Debug\I9.USCIS.Console.pdb
+C:\SVN\trunk\USCIS V-25\I9.USCIS.Console\bin\Debug\I9.USCIS.Wrapper.dll
+C:\SVN\trunk\USCIS V-25\I9.USCIS.Console\bin\Debug\Microsoft.Web.Services2.dll
+C:\SVN\trunk\USCIS V-25\I9.USCIS.Console\bin\Debug\I9.USCIS.Wrapper.pdb
+C:\SVN\trunk\USCIS V-25\I9.USCIS.Console\bin\Debug\I9.USCIS.Wrapper.XmlSerializers.dll
+C:\SVN\trunk\USCIS V-25\I9.USCIS.Console\obj\Debug\I9.USCIS.Console.csprojResolveAssemblyReference.cache
+C:\SVN\trunk\USCIS V-25\I9.USCIS.Console\obj\Debug\I9.USCIS.Console.exe
+C:\SVN\trunk\USCIS V-25\I9.USCIS.Console\obj\Debug\I9.USCIS.Console.pdb
+C:\SVN\trunk\USCIS V-26\I9.USCIS.Console\obj\Debug\I9.USCIS.Console.csprojResolveAssemblyReference.cache
+C:\SVN\trunk\USCIS V-26\I9.USCIS.Console\obj\Debug\I9.USCIS.Console.exe
+C:\SVN\trunk\USCIS V-26\I9.USCIS.Console\bin\Debug\I9.USCIS.Console.exe.config
+C:\SVN\trunk\USCIS V-26\I9.USCIS.Console\bin\Debug\I9.USCIS.Console.exe
+C:\SVN\trunk\USCIS V-26\I9.USCIS.Console\bin\Debug\I9.USCIS.Console.pdb
+C:\SVN\trunk\USCIS V-26\I9.USCIS.Console\bin\Debug\I9.USCIS.Wrapper.dll
+C:\SVN\trunk\USCIS V-26\I9.USCIS.Console\bin\Debug\I9.USCIS.Wrapper.pdb
+C:\SVN\trunk\USCIS V-26\I9.USCIS.Console\bin\Debug\I9.USCIS.Wrapper.XmlSerializers.dll
+C:\SVN\trunk\USCIS V-26\I9.USCIS.Console\obj\Debug\I9.USCIS.Console.pdb
+C:\SVN\trunk\trunk\USCIS V-28\I9.USCIS.Console\obj\Debug\I9.USCIS.Console.exe
+C:\SVN\trunk\trunk\USCIS V-28\I9.USCIS.Console\obj\Debug\I9.USCIS.Console.pdb
+C:\SVN\trunk\trunk\USCIS V-28\I9.USCIS.Console\bin\Debug\I9.USCIS.Console.exe.config
+C:\SVN\trunk\trunk\USCIS V-28\I9.USCIS.Console\bin\Debug\I9.USCIS.Console.exe
+C:\SVN\trunk\trunk\USCIS V-28\I9.USCIS.Console\bin\Debug\I9.USCIS.Console.pdb
+C:\SVN\trunk\trunk\USCIS V-28\I9.USCIS.Console\bin\Debug\I9.USCIS.Wrapper.dll
+C:\SVN\trunk\trunk\USCIS V-28\I9.USCIS.Console\bin\Debug\I9.USCIS.Wrapper.pdb
+C:\SVN\trunk\trunk\USCIS V-28\I9.USCIS.Console\bin\Debug\I9.USCIS.Wrapper.XmlSerializers.dll
+C:\GITFragomen\i9\USCIS V-29 NEW\I9.USCIS.Console\bin\Debug\I9.USCIS.Console.exe.config
+C:\GITFragomen\i9\USCIS V-29 NEW\I9.USCIS.Console\bin\Debug\I9.USCIS.Console.exe
+C:\GITFragomen\i9\USCIS V-29 NEW\I9.USCIS.Console\bin\Debug\I9.USCIS.Console.pdb
+C:\GITFragomen\i9\USCIS V-29 NEW\I9.USCIS.Console\bin\Debug\I9.USCIS.Wrapper.dll
+C:\GITFragomen\i9\USCIS V-29 NEW\I9.USCIS.Console\bin\Debug\I9.USCIS.Wrapper.XmlSerializers.dll
+C:\GITFragomen\i9\USCIS V-29 NEW\I9.USCIS.Console\obj\Debug\I9.USCIS.Console.csproj.CoreCompileInputs.cache
+C:\GITFragomen\i9\USCIS V-29 NEW\I9.USCIS.Console\obj\Debug\I9.USCIS.Console.exe
+C:\GITFragomen\i9\USCIS V-29 NEW\I9.USCIS.Console\obj\Debug\I9.USCIS.Console.pdb
+C:\GITFragomen\i9\USCIS V-29 NEW\I9.USCIS.Console\bin\Debug\I9.USCIS.Wrapper.pdb
+C:\GITFragomen\i9\USCIS V-29 NEW\I9.USCIS.Console\bin\Debug\I9.USCIS.Wrapper.dll.config
+C:\GITFragomen\i9\USCIS V-29 NEW\I9.USCIS.Console\obj\Debug\I9.USCIS.Console.csprojResolveAssemblyReference.cache

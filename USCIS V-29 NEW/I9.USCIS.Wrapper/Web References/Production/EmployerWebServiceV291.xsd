@@ -1,0 +1,826 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="https://e-verify.uscis.gov/WebService/EmployerService/V29/" elementFormDefault="qualified" targetNamespace="https://e-verify.uscis.gov/WebService/EmployerService/V29/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="https://n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="CloseCaseRequest">
+    <xs:sequence>
+      <xs:element name="ClientSoftwareVersion" nillable="true" type="xs:string" />
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+      <xs:element name="ClosureReasonCode" nillable="true" type="xs:string" />
+      <xs:element name="CurrentlyEmployed" nillable="true" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CloseCaseRequest" nillable="true" type="tns:CloseCaseRequest" />
+  <xs:complexType name="CloseCaseResult">
+    <xs:sequence>
+      <xs:element name="CurrentStateCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CloseCaseResult" nillable="true" type="tns:CloseCaseResult" />
+  <xs:complexType name="GetAvailableDocumentTypesRequest">
+    <xs:sequence>
+      <xs:element name="CitizenshipStatusCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetAvailableDocumentTypesRequest" nillable="true" type="tns:GetAvailableDocumentTypesRequest" />
+  <xs:complexType name="GetAvailableDocumentTypesResult">
+    <xs:sequence>
+      <xs:element name="DocumentTypeList" nillable="true" type="tns:ArrayOfDocumentType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetAvailableDocumentTypesResult" nillable="true" type="tns:GetAvailableDocumentTypesResult" />
+  <xs:complexType name="ArrayOfDocumentType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DocumentType" nillable="true" type="tns:DocumentType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDocumentType" nillable="true" type="tns:ArrayOfDocumentType" />
+  <xs:complexType name="DocumentType">
+    <xs:sequence>
+      <xs:element name="CitizenshipStatusCode" nillable="true" type="xs:string" />
+      <xs:element name="Id" type="xs:int" />
+      <xs:element name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DocumentType" nillable="true" type="tns:DocumentType" />
+  <xs:complexType name="GetCaseClosureReasonsRequest">
+    <xs:sequence>
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+      <xs:element name="CurrentlyEmployed" nillable="true" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetCaseClosureReasonsRequest" nillable="true" type="tns:GetCaseClosureReasonsRequest" />
+  <xs:complexType name="GetCaseClosureReasonsResult">
+    <xs:sequence>
+      <xs:element name="ClosureReasonList" nillable="true" type="tns:ArrayOfClosureReason" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetCaseClosureReasonsResult" nillable="true" type="tns:GetCaseClosureReasonsResult" />
+  <xs:complexType name="ArrayOfClosureReason">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClosureReason" nillable="true" type="tns:ClosureReason" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClosureReason" nillable="true" type="tns:ArrayOfClosureReason" />
+  <xs:complexType name="ClosureReason">
+    <xs:sequence>
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClosureReason" nillable="true" type="tns:ClosureReason" />
+  <xs:complexType name="GetCaseDetailsRequest">
+    <xs:sequence>
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetCaseDetailsRequest" nillable="true" type="tns:GetCaseDetailsRequest" />
+  <xs:complexType name="GetCaseDetailsResult">
+    <xs:sequence>
+      <xs:element name="ClientCompanyId" nillable="true" type="xs:int" />
+      <xs:element name="ClientCompanyName" nillable="true" type="xs:string" />
+      <xs:element name="CurrentStateCode" nillable="true" type="xs:string" />
+      <xs:element name="MessageCode" nillable="true" type="xs:int" />
+      <xs:element name="ResolutionCode" nillable="true" type="xs:string" />
+      <xs:element name="EligibilityStatement" nillable="true" type="xs:string" />
+      <xs:element name="EligibilityStatementDetails" nillable="true" type="xs:string" />
+      <xs:element name="LastName" nillable="true" type="xs:string" />
+      <xs:element name="FirstName" nillable="true" type="xs:string" />
+      <xs:element name="MiddleInitial" nillable="true" type="xs:string" />
+      <xs:element name="OtherNamesUsed" nillable="true" type="xs:string" />
+      <xs:element name="BirthDate" type="xs:date" />
+      <xs:element name="EmailAddress" nillable="true" type="xs:string" />
+      <xs:element name="CitizenshipStatusCode" nillable="true" type="xs:string" />
+      <xs:element name="Ssn" nillable="true" type="xs:string" />
+      <xs:element name="AlienNumber" nillable="true" type="xs:string" />
+      <xs:element name="I94Number" nillable="true" type="xs:string" />
+      <xs:element name="ReceiptNumber" nillable="true" type="xs:string" />
+      <xs:element name="VisaNumber" nillable="true" type="xs:string" />
+      <xs:element name="PassportNumber" nillable="true" type="xs:string" />
+      <xs:element name="PassportNumberNotAvailableIndicator" nillable="true" type="xs:boolean" />
+      <xs:element name="CountryOfIssuanceCode" nillable="true" type="xs:string" />
+      <xs:element name="CountryOfIssuanceDescription" nillable="true" type="xs:string" />
+      <xs:element name="DocumentTypeId" type="xs:int" />
+      <xs:element name="ListBDocumentTypeId" nillable="true" type="xs:int" />
+      <xs:element name="ListCDocumentTypeId" nillable="true" type="xs:int" />
+      <xs:element name="SupportingDocumentTypeId" nillable="true" type="xs:int" />
+      <xs:element name="IssuingAuthorityCode" nillable="true" type="xs:string" />
+      <xs:element name="ListBCDocumentNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocumentExpirationDate" nillable="true" type="xs:date" />
+      <xs:element name="NoDocumentExpirationDateIndicator" nillable="true" type="xs:boolean" />
+      <xs:element name="HireDate" type="xs:date" />
+      <xs:element name="EmployerCaseId" nillable="true" type="xs:string" />
+      <xs:element name="SystemLastName" nillable="true" type="xs:string" />
+      <xs:element name="SystemFirstName" nillable="true" type="xs:string" />
+      <xs:element name="AdditionalComments" nillable="true" type="xs:string" />
+      <xs:element name="PhotoTncIndicator" nillable="true" type="xs:boolean" />
+      <xs:element name="EmployeeNotifiedTncIndicator" nillable="true" type="xs:boolean" />
+      <xs:element name="ReferralDate" nillable="true" type="xs:date" />
+      <xs:element name="ContactByDate" nillable="true" type="xs:date" />
+      <xs:element name="ReferralResponseDueDate" nillable="true" type="xs:date" />
+      <xs:element name="SubmittingOfficialName" nillable="true" type="xs:string" />
+      <xs:element name="SubmittingOfficialPhoneNumber" nillable="true" type="xs:string" />
+      <xs:element name="SubmittingOfficialPhoneExtension" nillable="true" type="xs:string" />
+      <xs:element name="CaseCreatedDate" type="xs:date" />
+      <xs:element name="LetterTypeCodeList" nillable="true" type="tns:ArrayOfLetterTypeCodeType" />
+      <xs:element name="ClosureReasonCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetCaseDetailsResult" nillable="true" type="tns:GetCaseDetailsResult" />
+  <xs:complexType name="ArrayOfLetterTypeCodeType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LetterTypeCodeType" type="tns:LetterTypeCodeType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLetterTypeCodeType" nillable="true" type="tns:ArrayOfLetterTypeCodeType" />
+  <xs:simpleType name="LetterTypeCodeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SSA_FAN" />
+      <xs:enumeration value="SSA_FA_FAN" />
+      <xs:enumeration value="SSA_NATZ_FAN" />
+      <xs:enumeration value="DHS_FAN" />
+      <xs:enumeration value="SSA_RDC" />
+      <xs:enumeration value="DHS_RDC" />
+      <xs:enumeration value="SSA_FNC" />
+      <xs:enumeration value="DHS_FNC" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="LetterTypeCodeType" nillable="true" type="tns:LetterTypeCodeType" />
+  <xs:complexType name="GetCaseDhsReverifyFieldsRequest">
+    <xs:sequence>
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetCaseDhsReverifyFieldsRequest" nillable="true" type="tns:GetCaseDhsReverifyFieldsRequest" />
+  <xs:complexType name="GetCaseDhsReverifyFieldsResult">
+    <xs:sequence>
+      <xs:element name="DhsReverifyFieldList" nillable="true" type="tns:ArrayOfDhsReverifyField" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetCaseDhsReverifyFieldsResult" nillable="true" type="tns:GetCaseDhsReverifyFieldsResult" />
+  <xs:complexType name="ArrayOfDhsReverifyField">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DhsReverifyField" nillable="true" type="tns:DhsReverifyField" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDhsReverifyField" nillable="true" type="tns:ArrayOfDhsReverifyField" />
+  <xs:complexType name="DhsReverifyField">
+    <xs:sequence>
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element name="DisplayLabel" nillable="true" type="xs:string" />
+      <xs:element name="RequiredIndicator" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DhsReverifyField" nillable="true" type="tns:DhsReverifyField" />
+  <xs:complexType name="GetCitizenshipStatusesResult">
+    <xs:sequence>
+      <xs:element name="CitizenshipStatusList" nillable="true" type="tns:ArrayOfCitizenshipStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetCitizenshipStatusesResult" nillable="true" type="tns:GetCitizenshipStatusesResult" />
+  <xs:complexType name="ArrayOfCitizenshipStatus">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CitizenshipStatus" nillable="true" type="tns:CitizenshipStatus" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCitizenshipStatus" nillable="true" type="tns:ArrayOfCitizenshipStatus" />
+  <xs:complexType name="CitizenshipStatus">
+    <xs:sequence>
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CitizenshipStatus" nillable="true" type="tns:CitizenshipStatus" />
+  <xs:complexType name="GetCountryOfIssuanceListResult">
+    <xs:sequence>
+      <xs:element name="CountryList" nillable="true" type="tns:ArrayOfCountry" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetCountryOfIssuanceListResult" nillable="true" type="tns:GetCountryOfIssuanceListResult" />
+  <xs:complexType name="ArrayOfCountry">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Country" nillable="true" type="tns:Country" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCountry" nillable="true" type="tns:ArrayOfCountry" />
+  <xs:complexType name="Country">
+    <xs:sequence>
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Country" nillable="true" type="tns:Country" />
+  <xs:complexType name="GetDuplicateCaseContinueReasonsResult">
+    <xs:sequence>
+      <xs:element name="ContinueReasonList" nillable="true" type="tns:ArrayOfContinueReason" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetDuplicateCaseContinueReasonsResult" nillable="true" type="tns:GetDuplicateCaseContinueReasonsResult" />
+  <xs:complexType name="ArrayOfContinueReason">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ContinueReason" nillable="true" type="tns:ContinueReason" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfContinueReason" nillable="true" type="tns:ArrayOfContinueReason" />
+  <xs:complexType name="ContinueReason">
+    <xs:sequence>
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ContinueReason" nillable="true" type="tns:ContinueReason" />
+  <xs:complexType name="GetEmploymentVerificationFieldsRequest">
+    <xs:sequence>
+      <xs:element name="CitizenshipStatusCode" nillable="true" type="xs:string" />
+      <xs:element name="DocumentTypeId" nillable="true" type="xs:int" />
+      <xs:element name="ListBDocumentTypeId" nillable="true" type="xs:int" />
+      <xs:element name="SupportingDocumentTypeId" nillable="true" type="xs:int" />
+      <xs:element name="IssuingAuthorityCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetEmploymentVerificationFieldsRequest" nillable="true" type="tns:GetEmploymentVerificationFieldsRequest" />
+  <xs:complexType name="GetEmploymentVerificationFieldsResult">
+    <xs:sequence>
+      <xs:element name="EmploymentVerificationFieldList" nillable="true" type="tns:ArrayOfEmploymentVerificationField" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetEmploymentVerificationFieldsResult" nillable="true" type="tns:GetEmploymentVerificationFieldsResult" />
+  <xs:complexType name="ArrayOfEmploymentVerificationField">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EmploymentVerificationField" nillable="true" type="tns:EmploymentVerificationField" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEmploymentVerificationField" nillable="true" type="tns:ArrayOfEmploymentVerificationField" />
+  <xs:complexType name="EmploymentVerificationField">
+    <xs:sequence>
+      <xs:element name="CitizenshipStatusCode" nillable="true" type="xs:string" />
+      <xs:element name="DocumentTypeId" type="xs:int" />
+      <xs:element name="ListBDocumentTypeId" nillable="true" type="xs:int" />
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element name="DisplayLabel" nillable="true" type="xs:string" />
+      <xs:element name="RequiredIndicator" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EmploymentVerificationField" nillable="true" type="tns:EmploymentVerificationField" />
+  <xs:complexType name="GetIssuingAuthoritiesRequest">
+    <xs:sequence>
+      <xs:element name="ListBDocumentTypeId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetIssuingAuthoritiesRequest" nillable="true" type="tns:GetIssuingAuthoritiesRequest" />
+  <xs:complexType name="GetIssuingAuthoritiesResult">
+    <xs:sequence>
+      <xs:element name="IssuingAuthorityList" nillable="true" type="tns:ArrayOfIssuingAuthority" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetIssuingAuthoritiesResult" nillable="true" type="tns:GetIssuingAuthoritiesResult" />
+  <xs:complexType name="ArrayOfIssuingAuthority">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IssuingAuthority" nillable="true" type="tns:IssuingAuthority" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIssuingAuthority" nillable="true" type="tns:ArrayOfIssuingAuthority" />
+  <xs:complexType name="IssuingAuthority">
+    <xs:sequence>
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element name="Name" nillable="true" type="xs:string" />
+      <xs:element name="SupportingDocumentTypeId" nillable="true" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IssuingAuthority" nillable="true" type="tns:IssuingAuthority" />
+  <xs:complexType name="GetLateVerificationReasonsResult">
+    <xs:sequence>
+      <xs:element name="LateVerificationReasonList" nillable="true" type="tns:ArrayOfLateVerificationReason" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetLateVerificationReasonsResult" nillable="true" type="tns:GetLateVerificationReasonsResult" />
+  <xs:complexType name="ArrayOfLateVerificationReason">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LateVerificationReason" nillable="true" type="tns:LateVerificationReason" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLateVerificationReason" nillable="true" type="tns:ArrayOfLateVerificationReason" />
+  <xs:complexType name="LateVerificationReason">
+    <xs:sequence>
+      <xs:element name="Code" nillable="true" type="xs:string" />
+      <xs:element name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LateVerificationReason" nillable="true" type="tns:LateVerificationReason" />
+  <xs:complexType name="GetListBCDocumentTypesRequest">
+    <xs:sequence>
+      <xs:element name="CitizenshipStatusCode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetListBCDocumentTypesRequest" nillable="true" type="tns:GetListBCDocumentTypesRequest" />
+  <xs:complexType name="GetListBCDocumentTypesResult">
+    <xs:sequence>
+      <xs:element name="ListBDocumentTypeList" nillable="true" type="tns:ArrayOfListBCDocumentType" />
+      <xs:element name="ListCDocumentTypeList" nillable="true" type="tns:ArrayOfListBCDocumentType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetListBCDocumentTypesResult" nillable="true" type="tns:GetListBCDocumentTypesResult" />
+  <xs:complexType name="ArrayOfListBCDocumentType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListBCDocumentType" nillable="true" type="tns:ListBCDocumentType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfListBCDocumentType" nillable="true" type="tns:ArrayOfListBCDocumentType" />
+  <xs:complexType name="ListBCDocumentType">
+    <xs:sequence>
+      <xs:element name="CitizenshipStatusCode" nillable="true" type="xs:string" />
+      <xs:element name="Id" type="xs:int" />
+      <xs:element name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListBCDocumentType" nillable="true" type="tns:ListBCDocumentType" />
+  <xs:complexType name="GetSupportingDocumentTypesRequest">
+    <xs:sequence>
+      <xs:element name="ListBDocumentTypeId" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetSupportingDocumentTypesRequest" nillable="true" type="tns:GetSupportingDocumentTypesRequest" />
+  <xs:complexType name="GetSupportingDocumentTypesResult">
+    <xs:sequence>
+      <xs:element name="SupportingDocumentTypeList" nillable="true" type="tns:ArrayOfSupportingDocumentType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetSupportingDocumentTypesResult" nillable="true" type="tns:GetSupportingDocumentTypesResult" />
+  <xs:complexType name="ArrayOfSupportingDocumentType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SupportingDocumentType" nillable="true" type="tns:SupportingDocumentType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSupportingDocumentType" nillable="true" type="tns:ArrayOfSupportingDocumentType" />
+  <xs:complexType name="SupportingDocumentType">
+    <xs:sequence>
+      <xs:element name="Id" type="xs:int" />
+      <xs:element name="Description" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SupportingDocumentType" nillable="true" type="tns:SupportingDocumentType" />
+  <xs:complexType name="GetDuplicateCaseListRequest">
+    <xs:sequence>
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetDuplicateCaseListRequest" nillable="true" type="tns:GetDuplicateCaseListRequest" />
+  <xs:complexType name="GetDuplicateCaseListResult">
+    <xs:sequence>
+      <xs:element name="DuplicateCaseList" nillable="true" type="tns:ArrayOfDuplicateCaseRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetDuplicateCaseListResult" nillable="true" type="tns:GetDuplicateCaseListResult" />
+  <xs:complexType name="ArrayOfDuplicateCaseRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DuplicateCaseRecord" nillable="true" type="tns:DuplicateCaseRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDuplicateCaseRecord" nillable="true" type="tns:ArrayOfDuplicateCaseRecord" />
+  <xs:complexType name="DuplicateCaseRecord">
+    <xs:sequence>
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+      <xs:element name="Ssn" nillable="true" type="xs:string" />
+      <xs:element name="HireDate" type="xs:date" />
+      <xs:element name="EligibilityStatement" nillable="true" type="xs:string" />
+      <xs:element name="CaseCreatorLogonId" nillable="true" type="xs:string" />
+      <xs:element name="CaseCreatedDate" type="xs:date" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DuplicateCaseRecord" nillable="true" type="tns:DuplicateCaseRecord" />
+  <xs:complexType name="SubmitInitialVerificationRequest">
+    <xs:sequence>
+      <xs:element name="ClientSoftwareVersion" nillable="true" type="xs:string" />
+      <xs:element name="ClientCompanyId" nillable="true" type="xs:int" />
+      <xs:element name="LastName" nillable="true" type="xs:string" />
+      <xs:element name="FirstName" nillable="true" type="xs:string" />
+      <xs:element name="MiddleInitial" nillable="true" type="xs:string" />
+      <xs:element name="OtherNamesUsed" nillable="true" type="xs:string" />
+      <xs:element name="Ssn" nillable="true" type="xs:string" />
+      <xs:element name="EmailAddress" nillable="true" type="xs:string" />
+      <xs:element name="BirthDate" type="xs:date" />
+      <xs:element name="HireDate" type="xs:date" />
+      <xs:element name="LateVerificationReasonCode" nillable="true" type="xs:string" />
+      <xs:element name="LateVerificationOtherReasonText" nillable="true" type="xs:string" />
+      <xs:element name="CitizenshipStatusCode" nillable="true" type="xs:string" />
+      <xs:element name="AlienNumber" nillable="true" type="xs:string" />
+      <xs:element name="I94Number" nillable="true" type="xs:string" />
+      <xs:element name="CardNumber" nillable="true" type="xs:string" />
+      <xs:element name="PassportNumber" nillable="true" type="xs:string" />
+      <xs:element name="NoForeignPassportIndicator" nillable="true" type="xs:boolean" />
+      <xs:element name="CountryOfIssuanceCode" nillable="true" type="xs:string" />
+      <xs:element name="VisaNumber" nillable="true" type="xs:string" />
+      <xs:element name="DocumentTypeId" type="xs:int" />
+      <xs:element name="ListBDocumentTypeId" nillable="true" type="xs:int" />
+      <xs:element name="ListCDocumentTypeId" nillable="true" type="xs:int" />
+      <xs:element name="SupportingDocumentTypeId" nillable="true" type="xs:int" />
+      <xs:element name="IssuingAuthorityCode" nillable="true" type="xs:string" />
+      <xs:element name="ListBCDocumentNumber" nillable="true" type="xs:string" />
+      <xs:element name="NoDocumentExpirationDateIndicator" nillable="true" type="xs:boolean" />
+      <xs:element name="DocumentExpirationDate" nillable="true" type="xs:date" />
+      <xs:element name="EmployerCaseId" nillable="true" type="xs:string" />
+      <xs:element name="SubmittingOfficialName" nillable="true" type="xs:string" />
+      <xs:element name="SubmittingOfficialPhoneNumber" nillable="true" type="xs:string" />
+      <xs:element name="SubmittingOfficialPhoneExtension" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubmitInitialVerificationRequest" nillable="true" type="tns:SubmitInitialVerificationRequest" />
+  <xs:complexType name="SubmitInitialVerificationResult">
+    <xs:sequence>
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+      <xs:element name="CurrentStateCode" nillable="true" type="xs:string" />
+      <xs:element name="MessageCode" type="xs:int" />
+      <xs:element name="EligibilityStatement" nillable="true" type="xs:string" />
+      <xs:element name="EligibilityStatementDetails" nillable="true" type="xs:string" />
+      <xs:element name="SystemLastName" nillable="true" type="xs:string" />
+      <xs:element name="SystemFirstName" nillable="true" type="xs:string" />
+      <xs:element name="LetterTypeCodeList" nillable="true" type="tns:ArrayOfLetterTypeCodeType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubmitInitialVerificationResult" nillable="true" type="tns:SubmitInitialVerificationResult" />
+  <xs:complexType name="RetrieveLetterRequest">
+    <xs:sequence>
+      <xs:element name="ClientSoftwareVersion" nillable="true" type="xs:string" />
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+      <xs:element name="LetterTypeCode" type="tns:LetterTypeCodeType" />
+      <xs:element name="Language" type="tns:LanguageType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RetrieveLetterRequest" nillable="true" type="tns:RetrieveLetterRequest" />
+  <xs:simpleType name="LanguageType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ENGLISH" />
+      <xs:enumeration value="SPANISH" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="LanguageType" nillable="true" type="tns:LanguageType" />
+  <xs:complexType name="RetrieveLetterResult">
+    <xs:sequence>
+      <xs:element name="Letter" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RetrieveLetterResult" nillable="true" type="tns:RetrieveLetterResult" />
+  <xs:complexType name="SubmitDhsReverifyRequest">
+    <xs:sequence>
+      <xs:element name="ClientSoftwareVersion" nillable="true" type="xs:string" />
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+      <xs:element name="BirthDate" nillable="true" type="xs:date" />
+      <xs:element name="AlienNumber" nillable="true" type="xs:string" />
+      <xs:element name="I94Number" nillable="true" type="xs:string" />
+      <xs:element name="CardNumber" nillable="true" type="xs:string" />
+      <xs:element name="PassportNumber" nillable="true" type="xs:string" />
+      <xs:element name="NoForeignPassportIndicator" nillable="true" type="xs:boolean" />
+      <xs:element name="CountryOfIssuanceCode" nillable="true" type="xs:string" />
+      <xs:element name="VisaNumber" nillable="true" type="xs:string" />
+      <xs:element name="ListBCDocumentNumber" nillable="true" type="xs:string" />
+      <xs:element name="DocumentExpirationDate" nillable="true" type="xs:date" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubmitDhsReverifyRequest" nillable="true" type="tns:SubmitDhsReverifyRequest" />
+  <xs:complexType name="SubmitDhsReverifyResult">
+    <xs:sequence>
+      <xs:element name="CurrentStateCode" nillable="true" type="xs:string" />
+      <xs:element name="MessageCode" type="xs:int" />
+      <xs:element name="EligibilityStatement" nillable="true" type="xs:string" />
+      <xs:element name="SystemLastName" nillable="true" type="xs:string" />
+      <xs:element name="SystemFirstName" nillable="true" type="xs:string" />
+      <xs:element name="LetterTypeCodeList" nillable="true" type="tns:ArrayOfLetterTypeCodeType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubmitDhsReverifyResult" nillable="true" type="tns:SubmitDhsReverifyResult" />
+  <xs:complexType name="SubmitAdditionalVerificationRequest">
+    <xs:sequence>
+      <xs:element name="ClientSoftwareVersion" nillable="true" type="xs:string" />
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+      <xs:element name="SubmittingOfficialName" nillable="true" type="xs:string" />
+      <xs:element name="SubmittingOfficialPhoneNumber" nillable="true" type="xs:string" />
+      <xs:element name="SubmittingOfficialPhoneExtension" nillable="true" type="xs:string" />
+      <xs:element name="Comment" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubmitAdditionalVerificationRequest" nillable="true" type="tns:SubmitAdditionalVerificationRequest" />
+  <xs:complexType name="SubmitAdditionalVerificationResult">
+    <xs:sequence>
+      <xs:element name="CurrentStateCode" nillable="true" type="xs:string" />
+      <xs:element name="EligibilityStatement" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubmitAdditionalVerificationResult" nillable="true" type="tns:SubmitAdditionalVerificationResult" />
+  <xs:complexType name="SubmitSsaResubmittalRequest">
+    <xs:sequence>
+      <xs:element name="ClientSoftwareVersion" nillable="true" type="xs:string" />
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+      <xs:element name="LastName" nillable="true" type="xs:string" />
+      <xs:element name="FirstName" nillable="true" type="xs:string" />
+      <xs:element name="MiddleInitial" nillable="true" type="xs:string" />
+      <xs:element name="OtherNamesUsed" nillable="true" type="xs:string" />
+      <xs:element name="Ssn" nillable="true" type="xs:string" />
+      <xs:element name="BirthDate" type="xs:date" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubmitSsaResubmittalRequest" nillable="true" type="tns:SubmitSsaResubmittalRequest" />
+  <xs:complexType name="SubmitSsaResubmittalResult">
+    <xs:sequence>
+      <xs:element name="CurrentStateCode" nillable="true" type="xs:string" />
+      <xs:element name="MessageCode" type="xs:int" />
+      <xs:element name="EligibilityStatement" nillable="true" type="xs:string" />
+      <xs:element name="SystemLastName" nillable="true" type="xs:string" />
+      <xs:element name="SystemFirstName" nillable="true" type="xs:string" />
+      <xs:element name="LetterTypeCodeList" nillable="true" type="tns:ArrayOfLetterTypeCodeType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubmitSsaResubmittalResult" nillable="true" type="tns:SubmitSsaResubmittalResult" />
+  <xs:complexType name="SubmitSsaReverifyRequest">
+    <xs:sequence>
+      <xs:element name="ClientSoftwareVersion" nillable="true" type="xs:string" />
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+      <xs:element name="LastName" nillable="true" type="xs:string" />
+      <xs:element name="FirstName" nillable="true" type="xs:string" />
+      <xs:element name="MiddleInitial" nillable="true" type="xs:string" />
+      <xs:element name="OtherNamesUsed" nillable="true" type="xs:string" />
+      <xs:element name="Ssn" nillable="true" type="xs:string" />
+      <xs:element name="BirthDate" type="xs:date" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubmitSsaReverifyRequest" nillable="true" type="tns:SubmitSsaReverifyRequest" />
+  <xs:complexType name="SubmitSsaReverifyResult">
+    <xs:sequence>
+      <xs:element name="CurrentStateCode" nillable="true" type="xs:string" />
+      <xs:element name="MessageCode" type="xs:int" />
+      <xs:element name="EligibilityStatement" nillable="true" type="xs:string" />
+      <xs:element name="EligibilityStatementDetails" nillable="true" type="xs:string" />
+      <xs:element name="SystemLastName" nillable="true" type="xs:string" />
+      <xs:element name="SystemFirstName" nillable="true" type="xs:string" />
+      <xs:element name="LetterTypeCodeList" nillable="true" type="tns:ArrayOfLetterTypeCodeType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubmitSsaReverifyResult" nillable="true" type="tns:SubmitSsaReverifyResult" />
+  <xs:complexType name="ContinueDuplicateCaseRequest">
+    <xs:sequence>
+      <xs:element name="ClientSoftwareVersion" nillable="true" type="xs:string" />
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+      <xs:element name="ReasonCode" nillable="true" type="xs:string" />
+      <xs:element name="OtherReasonText" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ContinueDuplicateCaseRequest" nillable="true" type="tns:ContinueDuplicateCaseRequest" />
+  <xs:complexType name="ContinueDuplicateCaseResult">
+    <xs:sequence>
+      <xs:element name="CurrentStateCode" nillable="true" type="xs:string" />
+      <xs:element name="MessageCode" type="xs:int" />
+      <xs:element name="EligibilityStatement" nillable="true" type="xs:string" />
+      <xs:element name="EligibilityStatementDetails" nillable="true" type="xs:string" />
+      <xs:element name="SystemLastName" nillable="true" type="xs:string" />
+      <xs:element name="SystemFirstName" nillable="true" type="xs:string" />
+      <xs:element name="LetterTypeCodeList" nillable="true" type="tns:ArrayOfLetterTypeCodeType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ContinueDuplicateCaseResult" nillable="true" type="tns:ContinueDuplicateCaseResult" />
+  <xs:complexType name="ContinueDuplicateCaseWithChangeRequest">
+    <xs:sequence>
+      <xs:element name="ClientSoftwareVersion" nillable="true" type="xs:string" />
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+      <xs:element name="LastName" nillable="true" type="xs:string" />
+      <xs:element name="FirstName" nillable="true" type="xs:string" />
+      <xs:element name="MiddleInitial" nillable="true" type="xs:string" />
+      <xs:element name="OtherNamesUsed" nillable="true" type="xs:string" />
+      <xs:element name="Ssn" nillable="true" type="xs:string" />
+      <xs:element name="BirthDate" type="xs:date" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ContinueDuplicateCaseWithChangeRequest" nillable="true" type="tns:ContinueDuplicateCaseWithChangeRequest" />
+  <xs:complexType name="ContinueDuplicateCaseWithChangeResult">
+    <xs:sequence>
+      <xs:element name="CurrentStateCode" nillable="true" type="xs:string" />
+      <xs:element name="MessageCode" type="xs:int" />
+      <xs:element name="EligibilityStatement" nillable="true" type="xs:string" />
+      <xs:element name="EligibilityStatementDetails" nillable="true" type="xs:string" />
+      <xs:element name="SystemLastName" nillable="true" type="xs:string" />
+      <xs:element name="SystemFirstName" nillable="true" type="xs:string" />
+      <xs:element name="LetterTypeCodeList" nillable="true" type="tns:ArrayOfLetterTypeCodeType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ContinueDuplicateCaseWithChangeResult" nillable="true" type="tns:ContinueDuplicateCaseWithChangeResult" />
+  <xs:complexType name="SubmitSsaReferralRequest">
+    <xs:sequence>
+      <xs:element name="ClientSoftwareVersion" nillable="true" type="xs:string" />
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubmitSsaReferralRequest" nillable="true" type="tns:SubmitSsaReferralRequest" />
+  <xs:complexType name="SubmitSsaReferralResult">
+    <xs:sequence>
+      <xs:element name="CurrentStateCode" nillable="true" type="xs:string" />
+      <xs:element name="ContactByDate" type="xs:date" />
+      <xs:element name="ReferralResponseDueDate" type="xs:date" />
+      <xs:element name="LetterTypeCodeList" nillable="true" type="tns:ArrayOfLetterTypeCodeType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubmitSsaReferralResult" nillable="true" type="tns:SubmitSsaReferralResult" />
+  <xs:complexType name="SetSsaTncNotificationRequest">
+    <xs:sequence>
+      <xs:element name="ClientSoftwareVersion" nillable="true" type="xs:string" />
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+      <xs:element name="EmployeeNotifiedIndicator" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SetSsaTncNotificationRequest" nillable="true" type="tns:SetSsaTncNotificationRequest" />
+  <xs:complexType name="SetDhsTncNotificationRequest">
+    <xs:sequence>
+      <xs:element name="ClientSoftwareVersion" nillable="true" type="xs:string" />
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+      <xs:element name="EmployeeNotifiedIndicator" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SetDhsTncNotificationRequest" nillable="true" type="tns:SetDhsTncNotificationRequest" />
+  <xs:complexType name="SubmitDhsReferralRequest">
+    <xs:sequence>
+      <xs:element name="ClientSoftwareVersion" nillable="true" type="xs:string" />
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+      <xs:element name="PhotoDocument" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubmitDhsReferralRequest" nillable="true" type="tns:SubmitDhsReferralRequest" />
+  <xs:complexType name="SubmitDhsReferralResult">
+    <xs:sequence>
+      <xs:element name="CurrentStateCode" nillable="true" type="xs:string" />
+      <xs:element name="ContactByDate" type="xs:date" />
+      <xs:element name="ReferralResponseDueDate" type="xs:date" />
+      <xs:element name="LetterTypeCodeList" nillable="true" type="tns:ArrayOfLetterTypeCodeType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SubmitDhsReferralResult" nillable="true" type="tns:SubmitDhsReferralResult" />
+  <xs:complexType name="GetCasesByAlertTypeRequest">
+    <xs:sequence>
+      <xs:element name="Alert" type="tns:AlertType" />
+      <xs:element name="ListStartingPosition" type="xs:int" />
+      <xs:element name="ListNumberOfRecords" type="xs:int" />
+      <xs:element name="SortOrder" nillable="true" type="tns:SortOrderType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetCasesByAlertTypeRequest" nillable="true" type="tns:GetCasesByAlertTypeRequest" />
+  <xs:simpleType name="AlertType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CASES_WITH_NEW_UPDATES" />
+      <xs:enumeration value="CASES_TO_BE_CLOSED" />
+      <xs:enumeration value="WORK_AUTHORIZATION_DOCS_EXPIRING" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="AlertType" nillable="true" type="tns:AlertType" />
+  <xs:simpleType name="SortOrderType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="FIRST_NAME_ASCENDING" />
+      <xs:enumeration value="FIRST_NAME_DESCENDING" />
+      <xs:enumeration value="LAST_NAME_ASCENDING" />
+      <xs:enumeration value="LAST_NAME_DESCENDING" />
+      <xs:enumeration value="CASE_NUMBER_ASCENDING" />
+      <xs:enumeration value="CASE_NUMBER_DESCENDING" />
+      <xs:enumeration value="ELIGIBILITY_STMT_ASCENDING" />
+      <xs:enumeration value="ELIGIBILITY_STMT_DESCENDING" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="SortOrderType" nillable="true" type="tns:SortOrderType" />
+  <xs:complexType name="GetCasesByAlertTypeResult">
+    <xs:sequence>
+      <xs:element name="TotalCases" type="xs:int" />
+      <xs:element name="CaseList" nillable="true" type="tns:ArrayOfCaseListRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetCasesByAlertTypeResult" nillable="true" type="tns:GetCasesByAlertTypeResult" />
+  <xs:complexType name="ArrayOfCaseListRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CaseListRecord" nillable="true" type="tns:CaseListRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCaseListRecord" nillable="true" type="tns:ArrayOfCaseListRecord" />
+  <xs:complexType name="CaseListRecord">
+    <xs:sequence>
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+      <xs:element name="LastName" nillable="true" type="xs:string" />
+      <xs:element name="FirstName" nillable="true" type="xs:string" />
+      <xs:element name="EligibilityStatement" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CaseListRecord" nillable="true" type="tns:CaseListRecord" />
+  <xs:complexType name="GetCaseAlertCountsResult">
+    <xs:sequence>
+      <xs:element name="CasesWithNewUpdates" type="xs:int" />
+      <xs:element name="CasesToBeClosed" type="xs:int" />
+      <xs:element name="WorkAuthorizationDocsExpiring" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetCaseAlertCountsResult" nillable="true" type="tns:GetCaseAlertCountsResult" />
+  <xs:complexType name="RetrieveDocumentPhotoRequest">
+    <xs:sequence>
+      <xs:element name="ClientSoftwareVersion" nillable="true" type="xs:string" />
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RetrieveDocumentPhotoRequest" nillable="true" type="tns:RetrieveDocumentPhotoRequest" />
+  <xs:complexType name="RetrieveDocumentPhotoResult">
+    <xs:sequence>
+      <xs:element name="Photo" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RetrieveDocumentPhotoResult" nillable="true" type="tns:RetrieveDocumentPhotoResult" />
+  <xs:complexType name="ConfirmDocumentPhotoRequest">
+    <xs:sequence>
+      <xs:element name="ClientSoftwareVersion" nillable="true" type="xs:string" />
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+      <xs:element name="PhotoConfirmedIndicator" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConfirmDocumentPhotoRequest" nillable="true" type="tns:ConfirmDocumentPhotoRequest" />
+  <xs:complexType name="ConfirmDocumentPhotoResult">
+    <xs:sequence>
+      <xs:element name="CurrentStateCode" nillable="true" type="xs:string" />
+      <xs:element name="MessageCode" type="xs:int" />
+      <xs:element name="EligibilityStatement" nillable="true" type="xs:string" />
+      <xs:element name="LetterTypeCodeList" nillable="true" type="tns:ArrayOfLetterTypeCodeType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConfirmDocumentPhotoResult" nillable="true" type="tns:ConfirmDocumentPhotoResult" />
+  <xs:complexType name="GetResolvedCasesRequest">
+    <xs:sequence>
+      <xs:element name="NumberOfRecords" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetResolvedCasesRequest" nillable="true" type="tns:GetResolvedCasesRequest" />
+  <xs:complexType name="GetResolvedCasesResult">
+    <xs:sequence>
+      <xs:element name="CaseList" nillable="true" type="tns:ArrayOfResolvedCaseListRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetResolvedCasesResult" nillable="true" type="tns:GetResolvedCasesResult" />
+  <xs:complexType name="ArrayOfResolvedCaseListRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ResolvedCaseListRecord" nillable="true" type="tns:ResolvedCaseListRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResolvedCaseListRecord" nillable="true" type="tns:ArrayOfResolvedCaseListRecord" />
+  <xs:complexType name="ResolvedCaseListRecord">
+    <xs:sequence>
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+      <xs:element name="VerificationStep" type="tns:VerificationStepType" />
+      <xs:element name="EmployerCaseId" nillable="true" type="xs:string" />
+      <xs:element name="CurrentStateCode" nillable="true" type="xs:string" />
+      <xs:element name="MessageCode" nillable="true" type="xs:int" />
+      <xs:element name="ResolutionCode" nillable="true" type="xs:string" />
+      <xs:element name="EligibilityStatement" nillable="true" type="xs:string" />
+      <xs:element name="ResolvedDate" nillable="true" type="xs:dateTime" />
+      <xs:element name="LetterTypeCodeList" nillable="true" type="tns:ArrayOfLetterTypeCodeType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ResolvedCaseListRecord" nillable="true" type="tns:ResolvedCaseListRecord" />
+  <xs:simpleType name="VerificationStepType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Initial">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Second">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="Third">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="VerificationStepType" nillable="true" type="tns:VerificationStepType" />
+  <xs:complexType name="ConfirmResolvedCasesReceivedRequest">
+    <xs:sequence>
+      <xs:element name="CaseList" nillable="true" type="tns:ArrayOfConfirmResolvedCaseListRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConfirmResolvedCasesReceivedRequest" nillable="true" type="tns:ConfirmResolvedCasesReceivedRequest" />
+  <xs:complexType name="ArrayOfConfirmResolvedCaseListRecord">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ConfirmResolvedCaseListRecord" nillable="true" type="tns:ConfirmResolvedCaseListRecord" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfConfirmResolvedCaseListRecord" nillable="true" type="tns:ArrayOfConfirmResolvedCaseListRecord" />
+  <xs:complexType name="ConfirmResolvedCaseListRecord">
+    <xs:sequence>
+      <xs:element name="CaseNumber" nillable="true" type="xs:string" />
+      <xs:element name="VerificationStep" type="tns:VerificationStepType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConfirmResolvedCaseListRecord" nillable="true" type="tns:ConfirmResolvedCaseListRecord" />
+  <xs:complexType name="ConfirmResolvedCasesReceivedResult">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" name="CaseErrorList" nillable="true" type="q1:ArrayOfstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConfirmResolvedCasesReceivedResult" nillable="true" type="tns:ConfirmResolvedCasesReceivedResult" />
+</xs:schema>

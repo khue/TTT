@@ -1,0 +1,10 @@
+C:\Dev\USCIS V-21\I9.USCIS.PQueue.Live\bin\Debug\I9.USCIS.PQueue.Live.exe.config
+C:\Dev\USCIS V-21\I9.USCIS.PQueue.Live\bin\Debug\I9.USCIS.PQueue.Live.exe
+C:\Dev\USCIS V-21\I9.USCIS.PQueue.Live\bin\Debug\I9.USCIS.PQueue.Live.pdb
+C:\Dev\USCIS V-21\I9.USCIS.PQueue.Live\bin\Debug\Fdbl.Toolkit.dll
+C:\Dev\USCIS V-21\I9.USCIS.PQueue.Live\bin\Debug\I9.USCIS.Wrapper.dll
+C:\Dev\USCIS V-21\I9.USCIS.PQueue.Live\bin\Debug\Microsoft.Web.Services2.dll
+C:\Dev\USCIS V-21\I9.USCIS.PQueue.Live\bin\Debug\I9.USCIS.Wrapper.pdb
+C:\Dev\USCIS V-21\I9.USCIS.PQueue.Live\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\USCIS V-21\I9.USCIS.PQueue.Live\obj\Debug\I9.USCIS.PQueue.Live.exe
+C:\Dev\USCIS V-21\I9.USCIS.PQueue.Live\obj\Debug\I9.USCIS.PQueue.Live.pdb

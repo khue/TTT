@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="https://e-verify.uscis.gov/WebService/EmployerService/V29/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:i0="https://e-verify.uscis.gov/WebService/EmployerService/V29" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="EmployerWebServiceV29" targetNamespace="https://e-verify.uscis.gov/WebService/EmployerService/V29/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsp:Policy wsu:Id="BasicHttpBinding_IEmployerWebServiceV29_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Lax />
+              </wsp:Policy>
+            </sp:Layout>
+            <sp:IncludeTimestamp />
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <sp:SignedSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+              <wsp:Policy>
+                <sp:WssUsernameToken10 />
+              </wsp:Policy>
+            </sp:UsernameToken>
+          </wsp:Policy>
+        </sp:SignedSupportingTokens>
+        <sp:Wss10 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy />
+        </sp:Wss10>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsp:Policy wsu:Id="WSHttpBinding_IEmployerWebServiceV29_policy">
+    <wsp:ExactlyOne>
+      <wsp:All>
+        <sp:TransportBinding xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:TransportToken>
+              <wsp:Policy>
+                <sp:HttpsToken RequireClientCertificate="false" />
+              </wsp:Policy>
+            </sp:TransportToken>
+            <sp:AlgorithmSuite>
+              <wsp:Policy>
+                <sp:Basic256 />
+              </wsp:Policy>
+            </sp:AlgorithmSuite>
+            <sp:Layout>
+              <wsp:Policy>
+                <sp:Strict />
+              </wsp:Policy>
+            </sp:Layout>
+            <sp:IncludeTimestamp />
+          </wsp:Policy>
+        </sp:TransportBinding>
+        <sp:SignedSupportingTokens xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:UsernameToken sp:IncludeToken="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy/IncludeToken/AlwaysToRecipient">
+              <wsp:Policy>
+                <sp:WssUsernameToken10 />
+              </wsp:Policy>
+            </sp:UsernameToken>
+          </wsp:Policy>
+        </sp:SignedSupportingTokens>
+        <sp:Wss11 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy />
+        </sp:Wss11>
+        <sp:Trust10 xmlns:sp="http://schemas.xmlsoap.org/ws/2005/07/securitypolicy">
+          <wsp:Policy>
+            <sp:MustSupportIssuedTokens />
+            <sp:RequireClientEntropy />
+            <sp:RequireServerEntropy />
+          </wsp:Policy>
+        </sp:Trust10>
+        <wsam:Addressing>
+          <wsp:Policy>
+            <wsam:AnonymousResponses />
+          </wsp:Policy>
+        </wsam:Addressing>
+      </wsp:All>
+    </wsp:ExactlyOne>
+  </wsp:Policy>
+  <wsdl:import namespace="https://e-verify.uscis.gov/WebService/EmployerService/V29" location="https://stage.n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc?wsdl=wsdl0" />
+  <wsdl:types />
+  <wsdl:binding name="BasicHttpBinding_IEmployerWebServiceV29" type="i0:IEmployerWebServiceV29">
+    <wsp:PolicyReference URI="#BasicHttpBinding_IEmployerWebServiceV29_policy" />
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VerifyConnection">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/VerifyConnection" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseCase">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/CloseCase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableDocumentTypes">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetAvailableDocumentTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseClosureReasons">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCaseClosureReasons" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseDetails">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCaseDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseDhsReverifyFields">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCaseDhsReverifyFields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCitizenshipStatuses">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCitizenshipStatuses" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountryOfIssuanceList">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCountryOfIssuanceList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDuplicateCaseContinueReasons">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetDuplicateCaseContinueReasons" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmploymentVerificationFields">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetEmploymentVerificationFields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIssuingAuthorities">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetIssuingAuthorities" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLateVerificationReasons">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetLateVerificationReasons" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListBCDocumentTypes">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetListBCDocumentTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupportingDocumentTypes">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetSupportingDocumentTypes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDuplicateCaseList">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetDuplicateCaseList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitInitialVerification">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitInitialVerification" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveLetter">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/RetrieveLetter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitDhsReverify">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitDhsReverify" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitAdditionalVerification">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitAdditionalVerification" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitSsaResubmittal">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitSsaResubmittal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitSsaReverify">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitSsaReverify" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContinueDuplicateCase">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/ContinueDuplicateCase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContinueDuplicateCaseWithChange">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/ContinueDuplicateCaseWithChange" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitSsaReferral">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitSsaReferral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSsaTncNotification">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SetSsaTncNotification" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDhsTncNotification">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SetDhsTncNotification" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitDhsReferral">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitDhsReferral" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCasesByAlertType">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCasesByAlertType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseAlertCounts">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCaseAlertCounts" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveDocumentPhoto">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/RetrieveDocumentPhoto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmDocumentPhoto">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/ConfirmDocumentPhoto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResolvedCases">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetResolvedCases" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmResolvedCasesReceived">
+      <soap:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/ConfirmResolvedCasesReceived" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSHttpBinding_IEmployerWebServiceV29" type="i0:IEmployerWebServiceV29">
+    <wsp:PolicyReference URI="#WSHttpBinding_IEmployerWebServiceV29_policy" />
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VerifyConnection">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/VerifyConnection" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CloseCase">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/CloseCase" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableDocumentTypes">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetAvailableDocumentTypes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseClosureReasons">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCaseClosureReasons" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseDetails">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCaseDetails" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseDhsReverifyFields">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCaseDhsReverifyFields" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCitizenshipStatuses">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCitizenshipStatuses" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountryOfIssuanceList">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCountryOfIssuanceList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDuplicateCaseContinueReasons">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetDuplicateCaseContinueReasons" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmploymentVerificationFields">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetEmploymentVerificationFields" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetIssuingAuthorities">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetIssuingAuthorities" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLateVerificationReasons">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetLateVerificationReasons" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListBCDocumentTypes">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetListBCDocumentTypes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupportingDocumentTypes">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetSupportingDocumentTypes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDuplicateCaseList">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetDuplicateCaseList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitInitialVerification">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitInitialVerification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveLetter">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/RetrieveLetter" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitDhsReverify">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitDhsReverify" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitAdditionalVerification">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitAdditionalVerification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitSsaResubmittal">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitSsaResubmittal" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitSsaReverify">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitSsaReverify" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContinueDuplicateCase">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/ContinueDuplicateCase" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ContinueDuplicateCaseWithChange">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/ContinueDuplicateCaseWithChange" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitSsaReferral">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitSsaReferral" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetSsaTncNotification">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SetSsaTncNotification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetDhsTncNotification">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SetDhsTncNotification" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitDhsReferral">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/SubmitDhsReferral" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCasesByAlertType">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCasesByAlertType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCaseAlertCounts">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetCaseAlertCounts" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetrieveDocumentPhoto">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/RetrieveDocumentPhoto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmDocumentPhoto">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/ConfirmDocumentPhoto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetResolvedCases">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/GetResolvedCases" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmResolvedCasesReceived">
+      <soap12:operation soapAction="https://e-verify.uscis.gov/WebService/EmployerService/V29/IEmployerWebServiceV29/ConfirmResolvedCasesReceived" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EmployerWebServiceV29">
+    <wsdl:port name="BasicHttpBinding_IEmployerWebServiceV29" binding="tns:BasicHttpBinding_IEmployerWebServiceV29">
+      <soap:address location="https://stage.n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc/basic" />
+    </wsdl:port>
+    <wsdl:port name="WSHttpBinding_IEmployerWebServiceV29" binding="tns:WSHttpBinding_IEmployerWebServiceV29">
+      <soap12:address location="https://stage.n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc" />
+      <wsa10:EndpointReference>
+        <wsa10:Address>https://stage.n-e-verify.uscis.gov/services/EmployerWebServiceV29.svc</wsa10:Address>
+      </wsa10:EndpointReference>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
