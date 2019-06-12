@@ -1,0 +1,10 @@
+{
+    "i9tracker":{
+        "host":"SQLVS201NJ",
+        "user":"I9File_Generator",
+        "pwd":"N9?mLFo0jk2!SC@t",
+        "db":"I9Tracker",
+        "driver":"{ODBC Driver 11 for SQL Server}"
+    }
+}
+
