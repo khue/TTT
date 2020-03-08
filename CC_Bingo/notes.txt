@@ -1,0 +1,8 @@
+Summary
+Web based bingo game to be played during conference call. Bingo tiles need to be random and unique. Follow normal bingo rules and format. 5 x 5 board, winner is the first to complete a row.
+
+Research
+1) How to seed a list of bingo tiles tailored for conference calls, webex, etc...
+2) Think about what technology to use. Python, .net, other?
+3) Need to keep track of players, winners, and announce to group of players when someone wins.
+
